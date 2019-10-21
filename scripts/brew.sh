@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
-set -ev
+
+set -e
 
 source ./scripts/helper
 
