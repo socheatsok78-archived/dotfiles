@@ -1,0 +1,7 @@
+os: osx
+
+before_script:
+  - make
+
+script:
+  - make install
