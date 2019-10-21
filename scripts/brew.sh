@@ -18,7 +18,13 @@ function check_brew_installation() {
     fi
 }
 
-function brew_install_bundel() {
+function brew_update () {
+    c.ingo "Updating Homebrew..."
+    brew update
+}
+
+
+function brew_install_bundle() {
     if [ -f "Brewfile" ]; then
         c.info "Installing Brew Packages via Brewfile..."
        brew bundle # Install Brew Packages via Brewfile
@@ -30,7 +36,8 @@ function brew_install_bundel() {
 
 function main() {
     check_brew_installation
-    brew_install_bundel
+    brew_update
+    brew_install_bundle
 }
 
 # Entrypoint
