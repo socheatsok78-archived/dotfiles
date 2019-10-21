@@ -9,7 +9,12 @@ function install_xcode_commandline_tool () {
 }
 
 function main () {
-    install_xcode_commandline_tool
+    if [[ "$(uname -s)" == "Darwin" ]]; then
+        # Only run on Mac OS
+        install_xcode_commandline_tool
+    else
+        c.warn "[SKIP]: xCode Command-line tools, not on a mac!"
+    fi
 }
 
 # Entrypoint
