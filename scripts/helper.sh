@@ -29,3 +29,8 @@ function c.success() {
 function c.danger() {
     echo -e "\033[1;31m>>> $@\033[0m"
 }
+
+function c.error () {
+    c.danger "$@"
+}
+
