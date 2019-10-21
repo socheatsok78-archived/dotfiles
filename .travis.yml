@@ -1,5 +1,4 @@
 os: osx
-sudo: required
 
 addons:
   homebrew:
