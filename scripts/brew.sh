@@ -37,13 +37,13 @@ function brew_install_osx () {
 function brew_install_linux () {
     local brew_install_url="https://raw.githubusercontent.com/Linuxbrew/install/master/install.sh"
 
-    c.log "Installing Homebrew..."
+    c.log "Installing Homebrew Linux..."
     sh -c "$(curl -fsSL $brew_install_url)"
     check_brew_installation
 }
 
 function brew_update () {
-    c.ingo "Updating Homebrew..."
+    c.info "Updating Homebrew..."
     brew update
 }
 
