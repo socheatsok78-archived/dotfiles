@@ -1,7 +1,8 @@
 os: osx
+sudo: required
 
 before_script:
-  - make
+  - sudo make
 
 script:
   - make install
