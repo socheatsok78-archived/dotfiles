@@ -4,19 +4,42 @@ set -e
 
 source ./scripts/helper
 
-ruby_bin="/usr/bin/ruby"
-brew_install_url="https://raw.githubusercontent.com/Homebrew/install/master/install"
-
 function check_brew_installation () {
+    local OS=$(uname -s)
+    
     if [ `command -v brew` ]; then
-        c.log "Installing Homebrew..."
-
-        $ruby_bin -e "$(curl -fsSL $brew_install_url)"
-
-        check_brew_installation
+        case "$OS" in
+            "Darwin")
+                brew_install_osx
+            ;;
+            "Linux")
+                brew_install_linux
+            ;;
+            *)
+                # Drawin
+                brew_install_osx
+            ;;
+        esac
     else
         c.success "Homebrew is successfully installed!"
     fi
+}
+
+function brew_install_osx () {
+    local ruby_bin="/usr/bin/ruby"
+    local brew_install_url="https://raw.githubusercontent.com/Homebrew/install/master/install"
+
+    c.log "Installing Homebrew..."
+    $ruby_bin -e "$(curl -fsSL $brew_install_url)"
+    check_brew_installation
+}
+
+function brew_install_linux () {
+    local brew_install_url="https://raw.githubusercontent.com/Linuxbrew/install/master/install.sh"
+
+    c.log "Installing Homebrew..."
+    sh -c "$(curl -fsSL $brew_install_url)"
+    check_brew_installation
 }
 
 function brew_update () {
