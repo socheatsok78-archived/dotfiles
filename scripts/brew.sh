@@ -6,7 +6,7 @@ source ./scripts/helper
 ruby_bin="/usr/bin/ruby"
 brew_install_url="https://raw.githubusercontent.com/Homebrew/install/master/install"
 
-function check_brew_installation() {
+function check_brew_installation () {
     if [ `command -v brew` ]; then
         c.log "Installing Homebrew..."
 
@@ -24,7 +24,7 @@ function brew_update () {
 }
 
 
-function brew_install_bundle() {
+function brew_install_bundle () {
     if [ -f "Brewfile" ]; then
         c.info "Installing Brew Packages via Brewfile..."
        brew bundle # Install Brew Packages via Brewfile
@@ -34,7 +34,7 @@ function brew_install_bundle() {
     fi
 }
 
-function main() {
+function main () {
     check_brew_installation
     brew_update
     brew_install_bundle
