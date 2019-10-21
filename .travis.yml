@@ -1,4 +1,8 @@
-os: osx
+os:
+  - linux
+  - osx
+
+dist: trusty
 
 addons:
   homebrew:
