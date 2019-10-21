@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -ev
 
-source ./scripts/helper.sh
+source ./scripts/helper
 
 ruby_bin="/usr/bin/ruby"
 brew_install_url="https://raw.githubusercontent.com/Homebrew/install/master/install"
