@@ -1,6 +1,10 @@
 os: osx
 sudo: required
 
+addons:
+  homebrew:
+    update: true
+
 before_script:
   - sudo make
 
