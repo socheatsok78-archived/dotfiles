@@ -6,6 +6,7 @@ source ./scripts/helper
 
 function install_xcode_commandline_tool () {
     xcode-select --install || true
+    sudo xcodebuild -license accept || true
 }
 
 function main () {
