@@ -1,13 +1,13 @@
 #!/usr/bin/env bash
 set -ev
 
-source ./helper.sh
+source ./scripts/helper.sh
 
 ruby_bin="/usr/bin/ruby"
 brew_install_url="https://raw.githubusercontent.com/Homebrew/install/master/install"
 
 function check_brew_installation() {
-    if ! "command -v brew"; then
+    if [ `command -v brew` ]; then
         c.log "Installing Homebrew..."
 
         $ruby_bin -e "$(curl -fsSL $brew_install_url)"
