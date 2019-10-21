@@ -10,4 +10,6 @@ install:
 	@echo Installing dotfile into ${HOME}/ folder...
 
 dependencies:
+	./scripts/xcode.sh
 	./scripts/brew.sh
+
