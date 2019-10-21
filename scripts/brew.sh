@@ -7,7 +7,7 @@ source ./scripts/helper
 function check_brew_installation () {
     local OS=$(uname -s)
     
-    if [ `command -v brew` ]; then
+    if ! [ `command -v brew` ]; then
         case "$OS" in
             "Darwin")
                 brew_install_osx
