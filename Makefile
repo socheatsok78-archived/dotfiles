@@ -20,8 +20,5 @@ configure:
 	chmod +x ./scripts/*.sh
 
 dependencies:
-	./scripts/zsh.sh
-	./scripts/xcode.sh
-	./scripts/brew.sh
-	./scripts/other.sh
+	./scripts/install.sh
 
