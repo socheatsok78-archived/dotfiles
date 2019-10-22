@@ -20,3 +20,8 @@ alias ll='ls -alGpF'
 alias cat='bat'
 alias ping='prettyping --nolegend'
 alias top='htop'
+
+# OSX
+if [ `command -v defaults` ]; then
+  alias dock-add-divider="defaults write com.apple.dock persistent-apps -array-add '{\"tile-type\"=\"spacer-tile\";}'; sleep 1; killall Dock"
+fi
