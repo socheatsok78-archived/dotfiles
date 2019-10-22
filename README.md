@@ -6,7 +6,6 @@
 
 To automatically install `dotfile` on your system, simply run the following command:
 
-1. Cloning the repo
 ```sh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/socheatsok78/.dotfile/master/install)"
 ```
