@@ -2,6 +2,6 @@
     "files.associations": {
         ".zsh_*": "shellscript",
         "install": "shellscript",
-        "Brewfile": "shellscript"
+        "Brewfile": "ruby"
     },
 }
