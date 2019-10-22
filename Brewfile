@@ -8,6 +8,7 @@ brew "node" # LTS
 brew "yarn"
 
 # CLI Tools
+brew "tldr"
 brew "htop"
 brew "bat"
 brew "prettyping"
