@@ -1,10 +1,10 @@
 stages:
-  - osx
+  - mac
   - linux
 
 jobs:
   include:
-    - stage: osx
+    - stage: mac
       name: Mac OS X
       os: osx
       sudo: required
