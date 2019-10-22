@@ -2,6 +2,8 @@
 
 set -e
 
+sudo -v
+
 source ./scripts/helper
 
 function check_zsh_installation () {
@@ -36,8 +38,10 @@ function zsh_install_linux () {
 }
 
 function set_default_shell () {
-    c.log "Set ZSH as Default Shell..."
-    sudo chsh -s $(which zsh)
+    if ! echo $SHELL | grep zsh 1>/dev/null; then
+        c.log "Set ZSH as Default Shell..."
+        sudo chsh -s $(which zsh)
+    fi
 }
 
 
