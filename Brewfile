@@ -16,7 +16,3 @@ brew "prettyping"
 brew "lolcat"
 brew 'tree' # List directories in a tree structure
 brew 'httpie'
-
-# Core Binary
-brew 'gnupg2'
-brew 'coreutils' # Those that come with macOS are outdated
