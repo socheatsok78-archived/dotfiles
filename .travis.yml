@@ -21,4 +21,4 @@ jobs:
       services:
         - docker
       script:
-        - docker build . -f test/Linux.Dockerfile --tag "dotfile:linux"
+        - ./test/test.sh
