@@ -4,6 +4,7 @@
 brew "stow"
 
 # Development Environment
+brew "composer"
 brew "node" # LTS
 brew "yarn"
 
