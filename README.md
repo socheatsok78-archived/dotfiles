@@ -13,6 +13,7 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/socheatsok78/.dotfile/mast
 ### See also
 There are some great dotfiles around:
 - [terkelg/dotfiles](https://github.com/terkelg/dotfiles)
+- [MikeMcQuaid/dotfiles](https://github.com/MikeMcQuaid/dotfiles)
 
 ## :memo: License
 Licensed under the [MIT License](LICENSE).
