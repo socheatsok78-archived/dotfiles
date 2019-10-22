@@ -5,9 +5,16 @@ os:
 dist: trusty
 sudo: required
 
+env:
+  global:
+    - PATH="$PATH:/usr/local/Homebrew/bin"
+
 addons:
   homebrew:
     update: true
+
+install:
+  - rvm use 2.3 --install --binary
 
 before_script:
   - sudo chown -R $USER /usr/local
