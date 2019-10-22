@@ -2,6 +2,8 @@
 
 set -e
 
+source ./scripts/helper
+
 # Install cheat.sh CLI tool
 function install_cheat_sh () {
     curl https://cht.sh/:cht.sh | sudo tee /usr/local/bin/cht.sh && \
