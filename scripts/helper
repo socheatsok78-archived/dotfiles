@@ -13,6 +13,10 @@ function get_os () {
     uname -s
 }
 
+function make_local_bin () {
+    mkdir -p "$HOME/.local/bin"
+}
+
 
 # ========================================
 # Logger
