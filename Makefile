@@ -1,8 +1,7 @@
 STOW ?= stow
 HOME := "$(shell echo ${HOME})"
 DOTDIR = $(shell pwd)
-DIRS ?= zsh
-# DIRS ?= etc git tmux gpg ssh bash alacritty zsh
+DIRS ?= zsh ssh
 IGNORE = .DS_Store
 
 setup: configure dependencies
