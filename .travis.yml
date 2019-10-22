@@ -19,12 +19,10 @@ jobs:
       name: Linux
       os: linux
       language: ruby
-      env:
-        global:
-          - PATH=$PATH:/home/linuxbrew/.linuxbrew/bin
       rvm:
         - 2.4.1
       before_script:
+        - export PATH="$PATH:/home/linuxbrew/.linuxbrew/bin"
         - make
       script:
         - make install
