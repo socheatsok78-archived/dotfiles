@@ -2,7 +2,7 @@ os:
   - linux
   - osx
 
-dist: trusty
+dist: xenial
 sudo: required
 language: ruby
 
@@ -13,9 +13,6 @@ env:
 addons:
   homebrew:
     update: true
-
-install:
-  - rvm use 2.3 --install --binary
 
 before_script:
   - make
