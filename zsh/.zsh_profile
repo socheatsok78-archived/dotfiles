@@ -1,3 +1,13 @@
+#* >>> Welcome >>>
+function andrew() {
+  echo -e "     _              _                   "
+  echo -e "    / \   _ __   __| |_ __ _____      __"
+  echo -e "   / _ \ | '_ \ / _\` | '__/ _ \ \ /\ / /"
+  echo -e "  / ___ \| | | | (_| | | |  __/\ V  V / "
+  echo -e " /_/   \_\_| |_|\__,_|_|  \___| \_/\_/  "
+  echo -e " \n A senior developer is helpful, not all- \n knowing.\n"
+}
+
 # Prompt Components
 prompt_context() {}
 
@@ -11,3 +21,6 @@ test -e "$HOME/.zsh_aliases" && source "$HOME/.zsh_aliases"
 test -e "$HOME/.zsh_completion" && source "$HOME/.zsh_completion"
 test -e "$HOME/.zsh_functions" && source "$HOME/.zsh_functions"
 test -e "$HOME/.zsh_plugins" && source "$HOME/.zsh_plugins"
+
+# Entrypoint
+andrew;
