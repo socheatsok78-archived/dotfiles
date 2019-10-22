@@ -24,6 +24,6 @@ jobs:
       before_script:
         - export PATH="$PATH:/home/linuxbrew/.linuxbrew/bin"
         - echo "Removing existing ssh cofig" && rm "$HOME/.ssh/config" || true
-        - make
       script:
+        - make
         - make install
