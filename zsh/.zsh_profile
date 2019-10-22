@@ -1,0 +1,15 @@
+if [ -f "$HOME/.zsh_aliases" ]; then
+    source "$HOME/.zsh_aliases"
+fi
+
+if [ -f "$HOME/.zsh_completion" ]; then
+    source "$HOME/.zsh_completion"
+fi
+
+if [ -f "$HOME/.zsh_functions" ]; then
+    source "$HOME/.zsh_functions"
+fi
+
+if [ -f "$HOME/.zsh_plugins" ]; then
+    source "$HOME/.zsh_plugins"
+fi

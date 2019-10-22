@@ -9,3 +9,9 @@ alias reload='source ~/.zshrc'
 # fs
 alias ls='ls -GpF'
 alias ll='ls -alGpF'
+
+# Tools
+# - ignore alias: \cat or command cat
+alias cat='bat'
+alias ping='prettyping --nolegend'
+alias top='htop'
