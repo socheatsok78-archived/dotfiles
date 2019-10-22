@@ -6,6 +6,17 @@
 # https://www.shellhacks.com/bash-colors/
 # https://misc.flogisoft.com/bash/tip_colors_and_formatting
 
+# ========================================
+# helper
+# ========================================
+function get_os () {
+    uname -s
+}
+
+
+# ========================================
+# Logger
+# ========================================
 function c.log() {
     echo -e ">>> $@"
 }
@@ -33,4 +44,3 @@ function c.danger() {
 function c.error () {
     c.danger "$@"
 }
-
