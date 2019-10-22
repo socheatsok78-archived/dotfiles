@@ -27,7 +27,7 @@ function brew_install_osx () {
     local ruby_bin="/usr/bin/ruby"
     local brew_install_url="https://raw.githubusercontent.com/Homebrew/install/master/install"
 
-    c.log "Installing Homebrew..."
+    c.info "Installing Homebrew..."
     $ruby_bin -e "$(curl -fsSL $brew_install_url)"
     check_brew_installation
 }
@@ -35,7 +35,7 @@ function brew_install_osx () {
 function brew_install_linux () {
     local brew_install_url="https://raw.githubusercontent.com/Linuxbrew/install/master/install.sh"
 
-    c.log "Installing Homebrew Linux..."
+    c.info "Installing Homebrew Linux..."
     sh -c "$(curl -fsSL $brew_install_url)"
     check_brew_installation
 }

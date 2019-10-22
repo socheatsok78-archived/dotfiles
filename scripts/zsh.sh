@@ -24,20 +24,20 @@ function check_zsh_installation () {
 }
 
 function zsh_install_osx () {
-    c.log "Installing ZSH..."
+    c.info "Installing ZSH..."
     brew install zsh zsh-completions
     check_zsh_installation
 }
 
 function zsh_install_linux () {
-    c.log "Installing ZSH Linux..."
+    c.info "Installing ZSH Linux..."
     sudo apt-get install zsh
     check_zsh_installation
 }
 
 function set_default_shell () {
     if ! echo $SHELL | grep zsh 1>/dev/null; then
-        c.log "Set ZSH as Default Shell..."
+        c.info "Set ZSH as Default Shell..."
         sudo chsh -s $(which zsh)
     fi
 }
