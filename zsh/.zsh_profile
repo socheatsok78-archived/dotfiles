@@ -1,15 +1,10 @@
-if [ -f "$HOME/.zsh_aliases" ]; then
-    source "$HOME/.zsh_aliases"
-fi
+# Preferred editor for local and remote sessions
+export EDITOR='nano'
 
-if [ -f "$HOME/.zsh_completion" ]; then
-    source "$HOME/.zsh_completion"
-fi
-
-if [ -f "$HOME/.zsh_functions" ]; then
-    source "$HOME/.zsh_functions"
-fi
-
-if [ -f "$HOME/.zsh_plugins" ]; then
-    source "$HOME/.zsh_plugins"
-fi
+# ========================================
+# Parsing all zsh .dotfiles
+# ========================================
+test -e "$HOME/.zsh_aliases" && source "$HOME/.zsh_aliases"
+test -e "$HOME/.zsh_completion" && source "$HOME/.zsh_completion"
+test -e "$HOME/.zsh_functions" && source "$HOME/.zsh_functions"
+test -e "$HOME/.zsh_plugins" && source "$HOME/.zsh_plugins"
