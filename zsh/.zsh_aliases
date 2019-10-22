@@ -19,7 +19,14 @@ alias ll='ls -alGpF'
 # - ignore alias: \cat or command cat
 alias cat='bat'
 alias ping='prettyping --nolegend'
-alias top='htop'
+alias top='sudo htop' # alias top and fix high sierra bug
+alias help='tldr'
+
+# Print each PATH entry on a separate line
+alias path='echo -e ${PATH//:/\\n}'
+
+# IP addresses
+alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
 
 # OSX
 if [ `command -v defaults` ]; then
