@@ -6,8 +6,8 @@ source ./scripts/helper
 
 # Install cheat.sh CLI tool
 function install_cheat_sh () {
-    curl https://cht.sh/:cht.sh | sudo tee /usr/local/bin/cht.sh && \
-        chmod +x /usr/local/bin/cht.sh
+    curl https://cht.sh/:cht.sh | sudo tee "$LOCAL_BIN/cht.sh" && \
+        chmod +x "$LOCAL_BIN/cht.sh"
 }
 
 # Install GitIgnore Command Line

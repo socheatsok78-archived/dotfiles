@@ -6,6 +6,8 @@
 # https://www.shellhacks.com/bash-colors/
 # https://misc.flogisoft.com/bash/tip_colors_and_formatting
 
+export LOCAL_BIN="$HOME/.local/bin"
+
 # ========================================
 # helper
 # ========================================
@@ -14,7 +16,7 @@ function get_os () {
 }
 
 function make_local_bin () {
-    mkdir -p "$HOME/.local/bin"
+    mkdir -p "$LOCAL_BIN"
 }
 
 
