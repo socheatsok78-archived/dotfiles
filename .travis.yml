@@ -5,6 +5,7 @@ stages:
 jobs:
   include:
     - stage: osx
+      name: Mac OS X
       os: osx
       sudo: required
       addons:
@@ -15,6 +16,7 @@ jobs:
       script:
         - make install
     - stage: linux
+      name: Linux
       os: linux
       services:
         - docker
