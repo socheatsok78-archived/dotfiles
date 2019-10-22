@@ -2,8 +2,6 @@
 
 set -e
 
-sudo -v
-
 source ./scripts/helper
 
 function check_zsh_installation () {
