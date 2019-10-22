@@ -23,4 +23,12 @@ test -e "$HOME/.zsh_functions" && source "$HOME/.zsh_functions"
 test -e "$HOME/.zsh_plugins" && source "$HOME/.zsh_plugins"
 
 # Entrypoint
-andrew;
+function welcome() {
+  if [ `command -v lolcat` ]; then
+    andrew | lolcat;
+  else
+    andrew;
+  fi
+}
+
+welcome;
