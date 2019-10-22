@@ -4,11 +4,11 @@ set -e
 
 source ./scripts/helper
 
-function check_brew_installation () {
-    local OS=$(uname -s)
-    
-    if ! [ `command -v brew` ]; then
-        case "$OS" in
+function check_brew_installation () {    
+    if [ `command -v brew` ]; then
+        c.success "Homebrew is successfully installed!"
+    else
+        case "$(get_os)" in
             "Darwin")
                 brew_install_osx
             ;;
@@ -20,8 +20,6 @@ function check_brew_installation () {
                 brew_install_osx
             ;;
         esac
-    else
-        c.success "Homebrew is successfully installed!"
     fi
 }
 
@@ -46,7 +44,6 @@ function brew_update () {
     c.info "Updating Homebrew..."
     brew update
 }
-
 
 function brew_install_bundle () {
     if [ -f "Brewfile" ]; then
