@@ -1,21 +1,22 @@
-os:
-  - linux
+stages:
   - osx
+  - linux
 
-dist: xenial
-sudo: required
-language: ruby
-
-env:
-  global:
-    - PATH="$PATH:/usr/local/Homebrew/bin:/home/linuxbrew/.linuxbrew/bin/"
-
-addons:
-  homebrew:
-    update: true
-
-before_script:
-  - make
-
-script:
-  - make install
+jobs:
+  include:
+    - stage: osx
+      os: osx
+      sudo: required
+      addons:
+        homebrew:
+          update: true
+      before_script:
+        - make
+      script:
+        - make install
+    - stage: linux
+      os: linux
+      services:
+        - docker
+      script:
+        - docker build . -f test/Linux.Dockerfile --tag "dotfile:linux"
