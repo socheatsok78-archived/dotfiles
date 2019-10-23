@@ -10,6 +10,8 @@ function install_xcode_commandline_tool () {
     if [ -f "$DOTFILE_CONFIG_HOME/XCODE_INSTALLED_COMMANDLINE_TOOLS" ]; then
         c.warn "[SKIP]: xCode Command-line tools was already installed"
     else
+        if [ -n "$CI" ]; then return 0; fi # Skip on CI
+        
         xcode-select --install || true
         sudo xcodebuild -license accept || true
 
