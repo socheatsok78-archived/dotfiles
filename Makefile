@@ -4,9 +4,14 @@ DOTDIR = $(shell pwd)
 DIRS ?= zsh ssh etc
 IGNORE = .DS_Store
 
-setup: executable dependencies
+setup: executable configure dependencies
 
 install: link post-install
+
+configure:
+	@echo ">>> Configuring dotfile environment..."
+	mkdir -p $(HOMEDIR)/.dotfile.conf.d
+	@echo ">>> $(HOMEDIR)/.dotfile.conf.d created!"
 
 link:
 	@echo ">>> Installing dotfile into $(HOMEDIR)/ folder...\n"
