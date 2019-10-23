@@ -1,5 +1,7 @@
 #!/bin/sh
+
 # https://github.com/terkelg/dotfiles/blob/master/etc/.bin/ports
+
 #/ Usage: ports [<options>]
 #/ Show processes listening on ports.
 #/ Any <options> are passed to lsof
