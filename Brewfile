@@ -15,5 +15,5 @@ brew "htop"
 brew "bat" # "cat" on steroids
 brew "prettyping"
 brew "lolcat"
-brew 'tree' # List directories in a tree structure
-brew 'httpie'
+brew "tree" # List directories in a tree structure
+brew "httpie"
