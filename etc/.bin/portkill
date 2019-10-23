@@ -6,8 +6,8 @@
 #/ Kill any running process that using [port]
 
 test "$1" = "--help" && {
-  grep ^#/ <"$0"| cut -c4-
-  exit 2
+    grep ^#/ <"$0"| cut -c4-
+    exit 2
 }
 
 port=${1-"8080"}
