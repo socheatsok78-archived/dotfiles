@@ -1,14 +1,14 @@
 # Brewfile
-tap "github/bootstrap"
-tap "github/packages"
+# tap "github/bootstrap"
+# tap "github/packages"
 tap "heroku/brew"
 tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/cask-versions"
 tap "homebrew/core"
-tap "homebrew/formula-analytics"
-tap "homebrew/services"
-tap "homebrew/test-bot"
+# tap "homebrew/formula-analytics"
+# tap "homebrew/services"
+# tap "homebrew/test-bot"
 
 # Makefile Requirements
 brew "stow"
