@@ -14,7 +14,7 @@ function check_dotfile () {
 
 function clone_repo () {
     echo "Downloading dotfile..."
-    git clone git@github.com:socheatsok78/.dotfile.git "$DOTFILE_INSTALL_DIR"
+    git clone https://github.com/socheatsok78/.dotfile.git "$DOTFILE_INSTALL_DIR"
 }
 
 function update_repo () {
