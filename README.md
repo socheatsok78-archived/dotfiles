@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.com/socheatsok78/.dotfile.svg?branch=master)][travis-ci-status]
 
-## :warning: Use at your own risk
+### :warning: Use at your own risk
 **You should only use this on a fresh installed system!**
 This is a personal `dotfile` environment, ***I intend to use for my own system***, but if you insist to use the same environment as I do, please know that you're on your own.
 
