@@ -1,6 +1,7 @@
 stages:
   - mac
   - linux
+  - trial
 
 jobs:
   include:
@@ -23,15 +24,6 @@ jobs:
         - 2.4.1
       script:
         - sh -c "$(curl -fsSL https://raw.githubusercontent.com/socheatsok78/.dotfile/master/install)"
-    - stage: mac
-      name: Trial Test Run
-      os: osx
-      addons:
-        homebrew:
-          update: true
-      script:
-        - cd test
-        - brew bundle
     - stage: linux
       name: Linux
       os: linux
@@ -52,3 +44,21 @@ jobs:
         - 2.4.1
       script:
         - sh -c "$(curl -fsSL https://raw.githubusercontent.com/socheatsok78/.dotfile/master/install)"
+    - stage: trial
+      name: Trial Test Run on Mac OS X
+      os: osx
+      addons:
+        homebrew:
+          update: true
+      script:
+        - cd test
+        - brew bundle
+    - stage: trial
+      name: Trial Test Run on Linux
+      os: linux
+      language: ruby
+      rvm:
+        - 2.4.1
+      script:
+        - cd test
+        - brew bundle
