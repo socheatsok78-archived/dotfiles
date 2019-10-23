@@ -1,7 +1,5 @@
 # .dotfile — My personal dotfile environments
 
-[![Build Status](https://travis-ci.com/socheatsok78/.dotfile.svg?branch=master)][travis-ci-status]
-
 ### :warning: Use at your own risk
 **You should only use this on a fresh installed system!**
 This is a personal `dotfile` environment, ***I intend to use for my own system***, but if you insist to use the same environment as I do, please know that you're on your own.
@@ -9,6 +7,8 @@ This is a personal `dotfile` environment, ***I intend to use for my own system**
 I'm **not responsible** for any damage done to your **system\computer**. Please review the source code before using. You could check the **[Travis Build Status][travis-ci-status]** for more information.
 
 But if you enjoy it please give it a star :star:!
+
+[![Build Status](https://travis-ci.com/socheatsok78/.dotfile.svg?branch=master)][travis-ci-status]
 
 ## Installation
 To automatically install `dotfile` on your system, simply run the following command:
