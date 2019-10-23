@@ -11,6 +11,7 @@ install: link post-install
 link:
 	@echo ">>> Installing dotfile into $(HOMEDIR)/ folder...\n"
 	@$(STOW) --target=$(HOMEDIR) --ignore=$(IGNORE) -Rv $(DIRS)
+	@echo ">>> Successfully installed dotfile to your system!"
 
 post-install:
 	@echo "\n>>> Executing Post-install Script"
@@ -19,6 +20,7 @@ post-install:
 uninstall:
 	@echo Uninstalling dotfile from ${HOMEDIR}/ folder...
 	@$(STOW) --target=$(HOMEDIR) --ignore=$(IGNORE) -Dv $(DIRS)
+	@echo ">>> Successfully uninstalled dotfile from your system!"
 
 executable:
 	@echo ">>> Making scripts executable..."
