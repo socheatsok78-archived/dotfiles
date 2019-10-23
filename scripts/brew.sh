@@ -33,12 +33,18 @@ function brew_install_osx () {
 }
 
 function brew_install_linux () {
-    local brew_install_url="https://raw.githubusercontent.com/Linuxbrew/install/master/install.sh"
+    local brew_install_url="https://github.com/Homebrew/brew"
 
     c.info "Installing Homebrew Linux..."
-    sh -c "$(curl -fsSL $brew_install_url)"
-    
+
+    git clone $brew_install_url $HOME/.linuxbrew/Homebrew
+    mkdir $HOME/.linuxbrew/bin
+    ln -s ../Homebrew/bin/brew $HOME/.linuxbrew/bin
     eval $($HOME/.linuxbrew/bin/brew shellenv)
+
+    echo 'eval $($HOME/.linuxbrew/bin/brew shellenv)' >> "$HOME/.zshrc" || true
+    echo 'eval $($HOME/.linuxbrew/bin/brew shellenv)' >> "$HOME/.bashrc" || true
+
     check_brew_installation
 }
 
