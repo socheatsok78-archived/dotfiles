@@ -9,16 +9,9 @@ function check_brew_installation () {
         c.success "Homebrew is successfully installed!"
     else
         case "$(get_os)" in
-            "Darwin")
-                brew_install_osx
-            ;;
-            "Linux")
-                brew_install_linux
-            ;;
-            *)
-                # Drawin
-                brew_install_osx
-            ;;
+            "Darwin")   brew_install_osx    ;;
+            "Linux")    brew_install_linux  ;;
+            *)          brew_install_osx    ;;
         esac
     fi
 }
