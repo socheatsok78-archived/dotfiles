@@ -37,6 +37,8 @@ function brew_install_linux () {
 
     c.info "Installing Homebrew Linux..."
     sh -c "$(curl -fsSL $brew_install_url)"
+    
+    eval $($HOME/.linuxbrew/bin/brew shellenv)
     check_brew_installation
 }
 
