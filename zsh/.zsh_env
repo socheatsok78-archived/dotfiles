@@ -1,0 +1,13 @@
+export DOTFILE_HOME="$HOME/.dotfile"
+export DOTFILE_CONFIG_HOME="$HOME/.dotfile.conf.d"
+
+# Preferred editor for local and remote sessions
+export EDITOR='nano'
+export GUI_EDITOR='code'
+
+# Add ./local/bin to $PATH
+export PATH="$PATH:$HOME/.local/bin:$HOME/.bin"
+
+test -e "/usr/libexec/java_home" && {
+    export JAVA_HOME=$(/usr/libexec/java_home --failfast)
+}

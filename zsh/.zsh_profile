@@ -1,6 +1,3 @@
-export DOTFILE_HOME="$HOME/.dotfile"
-export DOTFILE_CONFIG_HOME="$HOME/.dotfile.conf.d"
-
 #* >>> Welcome >>>
 function andrew() {
   echo -e "     _              _                   "
@@ -14,16 +11,10 @@ function andrew() {
 # Prompt Components
 prompt_context() {}
 
-# Preferred editor for local and remote sessions
-export EDITOR='nano'
-export GUI_EDITOR='code'
-
-# Add ./local/bin to $PATH
-export PATH="$PATH:$HOME/.local/bin:$HOME/.bin"
-
 # ========================================
 # Parsing all zsh .dotfiles
 # ========================================
+test -e "$HOME/.zsh_env" && source "$HOME/.zsh_env"
 test -e "$HOME/.zsh_aliases" && source "$HOME/.zsh_aliases"
 test -e "$HOME/.zsh_completion" && source "$HOME/.zsh_completion"
 test -e "$HOME/.zsh_functions" && source "$HOME/.zsh_functions"
