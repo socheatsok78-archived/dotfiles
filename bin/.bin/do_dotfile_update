@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+
+set -e
+
+function do_dotfile_update () {
+    cd "$DOTFILE_HOME"
+    echo "\$" $0
+    # git pull --rebase --stat origin master
+}
+
+do_dotfile_update
