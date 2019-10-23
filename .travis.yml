@@ -44,3 +44,11 @@ jobs:
       script:
         - make
         - make install
+    - stage: linux
+      name: One-Click Installer
+      os: linux
+      language: ruby
+      rvm:
+        - 2.4.1
+      script:
+        - sh -c "$(curl -fsSL https://raw.githubusercontent.com/socheatsok78/.dotfile/master/install)"
