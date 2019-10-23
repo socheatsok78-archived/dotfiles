@@ -1,7 +1,7 @@
 STOW ?= stow
 HOMEDIR := "$(shell echo ${HOME})"
 DOTDIR = $(shell pwd)
-DIRS ?= zsh ssh bin
+DIRS ?= zsh ssh etc
 IGNORE = .DS_Store
 
 setup: executable dependencies
@@ -26,7 +26,7 @@ executable:
 	@echo ">>> Making scripts executable..."
 	chmod +x ./scripts/*.sh
 	chmod +x ./tools/*.sh
-	chmod +x ./bin/.bin/*
+	chmod +x ./etc/.bin/*
 	@echo ">>> All scripts & tools are executable!"
 
 dependencies:
