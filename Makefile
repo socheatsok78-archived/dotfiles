@@ -14,7 +14,7 @@ link:
 
 post-install:
 	@echo "\n>>> Executing Post-install Script"
-	./tools/post_install.sh
+	./tools/post-install.sh
 
 uninstall:
 	@echo Uninstalling dotfile from ${HOMEDIR}/ folder...
