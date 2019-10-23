@@ -1,7 +1,7 @@
 # .dotfile — My personal dotfile environments
 
 ### :warning: Use at your own risk
-**You should only use this on a fresh installed system!**
+You should only use this on a **fresh installed system!**
 This is a personal `dotfile` environment, ***I intend to use for my own system***, but if you insist to use the same environment as I do, please know that you're on your own.
 
 I'm **not responsible** for any damage done to your **system\computer**. Please review the source code before using. You could check the **[Travis Build Status][travis-ci-status]** for more information.
