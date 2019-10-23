@@ -17,3 +17,4 @@ brew "prettyping"
 brew "lolcat"
 brew "tree" # List directories in a tree structure
 brew "httpie"
+brew "thefuck" # No fuck given
