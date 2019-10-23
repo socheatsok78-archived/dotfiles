@@ -1,0 +1,8 @@
+#!/bin/sh
+# https://github.com/terkelg/dotfiles/blob/master/etc/.bin/portkill
+
+port=${1-"8080"}
+shift
+
+pid="$(ports | grep "$port" | awk '{ print $2 }')"
+kill "$pid" "$@"
