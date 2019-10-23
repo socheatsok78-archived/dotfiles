@@ -1,0 +1,34 @@
+# Brewfile
+tap "github/bootstrap"
+tap "github/packages"
+tap "heroku/brew"
+tap "homebrew/bundle"
+tap "homebrew/cask"
+tap "homebrew/cask-versions"
+tap "homebrew/core"
+tap "homebrew/formula-analytics"
+tap "homebrew/services"
+tap "homebrew/test-bot"
+
+# Makefile Requirements
+brew "stow"
+
+# Development CLI
+brew "composer"
+brew "node" # LTS
+brew "yarn"
+
+# Development Environment
+brew "php"
+brew "nginx", restart_service: true
+brew "mysql@5.7", restart_service: true
+brew "redis", restart_service: true
+
+# CLI Tools
+brew "tldr"
+brew "htop"
+brew "bat" # "cat" on steroids
+brew "prettyping"
+brew "lolcat"
+brew 'tree' # List directories in a tree structure
+brew 'httpie'

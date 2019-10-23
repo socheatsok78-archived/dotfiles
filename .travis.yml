@@ -1,6 +1,7 @@
 stages:
   - mac
   - linux
+  - trial
 
 jobs:
   include:
@@ -27,3 +28,12 @@ jobs:
       script:
         - make
         - make install
+    - stage: trial
+      name: Trail Test Run
+      os: osx
+      addons:
+        homebrew:
+          update: true
+      script:
+        - cd test
+        - brew bundle
