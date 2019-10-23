@@ -4,6 +4,8 @@ set -e
 
 source ./scripts/helper
 
+DOTFILE_CONFIG_HOME=${DOTFILE_CONFIG_HOME:-"$HOME/.dotfile.conf.d"}
+
 function install_xcode_commandline_tool () {
     if [ -f "$DOTFILE_CONFIG_HOME/XCODE_INSTALLED_COMMANDLINE_TOOLS" ]; then
         c.warn "[SKIP]: xCode Command-line tools was already installed"
