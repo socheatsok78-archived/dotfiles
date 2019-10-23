@@ -1,10 +1,10 @@
 STOW ?= stow
 HOMEDIR := "$(shell echo ${HOME})"
 DOTDIR = $(shell pwd)
-DIRS ?= zsh ssh
+DIRS ?= zsh ssh bin
 IGNORE = .DS_Store
 
-setup: configure dependencies
+setup: executable dependencies
 
 install: link post-install
 
@@ -14,16 +14,19 @@ link:
 
 post-install:
 	@echo "\n>>> Executing Post-install Script"
-	./scripts/post_install.sh
+	./tools/post_install.sh
 
 uninstall:
 	@echo Uninstalling dotfile from ${HOMEDIR}/ folder...
 	@$(STOW) --target=$(HOMEDIR) --ignore=$(IGNORE) -Dv $(DIRS)
 
-configure:
+executable:
 	@echo ">>> Making scripts executable..."
 	chmod +x ./scripts/*.sh
+	chmod +x ./tools/*.sh
+	chmod +x ./bin/.bin/*
+	@echo ">>> All scripts & tools are executable!"
 
 dependencies:
-	./scripts/install.sh
+	./tools/dependencies.sh
 
