@@ -1,3 +1,5 @@
+# vim: ft=zsh
+
 # ZSH
 alias zshconfig="$GUI_EDITOR ~/.zshrc"
 alias ohmyzsh="$GUI_EDITOR ~/.oh-my-zsh"
@@ -30,5 +32,5 @@ alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
 
 # OSX
 if [ `command -v defaults` ]; then
-  alias dock-add-divider="defaults write com.apple.dock persistent-apps -array-add '{\"tile-type\"=\"spacer-tile\";}'; sleep 1; killall Dock"
+    alias dock-add-divider="defaults write com.apple.dock persistent-apps -array-add '{\"tile-type\"=\"spacer-tile\";}'; sleep 1; killall Dock"
 fi

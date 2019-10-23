@@ -1,3 +1,5 @@
+# vim: ft=zsh
+
 export DOTFILE_HOME="$HOME/.dotfile"
 export DOTFILE_CONFIG_HOME="$HOME/.dotfile.conf.d"
 
