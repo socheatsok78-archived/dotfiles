@@ -43,7 +43,7 @@ jobs:
       rvm:
         - 2.4.1
       script:
-        - sh -c "$(curl -fsSL https://raw.githubusercontent.com/socheatsok78/.dotfile/master/install)"
+        - curl -fsSL https://raw.githubusercontent.com/socheatsok78/.dotfile/master/install | bash
     - stage: trial
       name: Trial Test Run on Mac OS X
       os: osx
