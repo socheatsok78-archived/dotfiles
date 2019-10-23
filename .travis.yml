@@ -1,6 +1,7 @@
 stages:
   - mac
   - linux
+  - oneclick
   - trial
 
 jobs:
@@ -28,6 +29,14 @@ jobs:
       script:
         - make
         - make install
+    - stage: oneclick
+      name: One-Click Installer
+      os: osx
+      language: ruby
+      rvm:
+        - 2.4.1
+      script:
+        - sh -c "$(curl -fsSL https://raw.githubusercontent.com/socheatsok78/.dotfile/master/install)"
     - stage: trial
       name: Trial Test Run
       os: osx
