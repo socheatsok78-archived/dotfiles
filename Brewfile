@@ -6,6 +6,7 @@ brew "stow"
 # Development Environment
 brew "composer"
 brew "node" # LTS
+brew "node@10" # Node v10
 brew "yarn"
 
 # CLI Tools
