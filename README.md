@@ -23,6 +23,12 @@ After the installation completed, add the following line to your `.bashrc` or `.
 test -e "$HOME/.zsh_profile" && source "$HOME/.zsh_profile"
 ```
 
+## ZSH First-party plugins you should use
+```sh
+plugins=(sudo git git-flow yarn last-working-dir thefuck)
+```
+Feel free to add your own, find more plugins here [oh-my-zsh/wiki/plugins](https://github.com/robbyrussell/oh-my-zsh/wiki/Plugins)
+
 ## Update
 To get the latest update of `dotfile` simply run the following command:
 ```sh
