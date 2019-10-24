@@ -1,6 +1,7 @@
 # vim: ft=zsh
 
 export DOTFILE_HOME="$HOME/.dotfile"
+export DOTFILE_SDK_HOME="$HOME/.dotfile.sdk.d"
 export DOTFILE_CONFIG_HOME="$HOME/.dotfile.conf.d"
 
 # Preferred editor for local and remote sessions
@@ -10,6 +11,7 @@ export GUI_EDITOR='code'
 # Add ./local/bin to $PATH
 export PATH="$PATH:$HOME/.local/bin:$HOME/.bin"
 
+# JAVA_HOME
 test -e "/usr/libexec/java_home" && {
     export JAVA_HOME=$(/usr/libexec/java_home --failfast)
 }
