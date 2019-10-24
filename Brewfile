@@ -14,6 +14,7 @@ brew "yarn"
 brew "tldr"
 brew "htop"
 brew "bat"                  # "cat" on steroids
+brew "exa"                  # A modern replacement for ls
 brew "prettyping"
 brew "lolcat"
 brew "tree"                 # List directories in a tree structure
