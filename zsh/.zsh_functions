@@ -21,6 +21,14 @@ fkill() {
     fi
 }
 
+# Mac OS Dock Helper
+dock-add-spacer() {
+    if [ `command -v defaults` ]; then
+        defaults write com.apple.dock persistent-apps -array-add '{"tile-type"="spacer-tile";}'
+        killall Dock
+    fi
+}
+
 # dotfile helper functions
 dotfile_config_folder () {
     if ! [ -d "$DOTFILE_CONFIG_HOME" ]; then
