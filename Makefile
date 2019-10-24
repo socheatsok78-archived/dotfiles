@@ -10,8 +10,7 @@ install: link post-install
 
 configure:
 	@echo ">>> Configuring dotfile environment..."
-	mkdir -p $(HOMEDIR)/.dotfile.conf.d
-	@echo ">>> $(HOMEDIR)/.dotfile.conf.d created!"
+	./scripts/dotfile.sh
 
 link:
 	@echo ">>> Installing dotfile into $(HOMEDIR)/ folder...\n"

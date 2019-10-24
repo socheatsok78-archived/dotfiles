@@ -2,6 +2,7 @@
 
 set -e
 
+# Installing dependencies
 ./scripts/zsh.sh
 ./scripts/xcode.sh
 ./scripts/brew.sh
