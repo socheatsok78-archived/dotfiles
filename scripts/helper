@@ -6,6 +6,7 @@
 # https://www.shellhacks.com/bash-colors/
 # https://misc.flogisoft.com/bash/tip_colors_and_formatting
 
+source ./zsh/.zsh_env
 export LOCAL_BIN="$HOME/.local/bin"
 
 # ========================================
