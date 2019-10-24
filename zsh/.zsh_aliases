@@ -36,3 +36,7 @@ alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
 if [ `command -v defaults` ]; then
     alias dock-add-divider="defaults write com.apple.dock persistent-apps -array-add '{\"tile-type\"=\"spacer-tile\";}'; sleep 1; killall Dock"
 fi
+
+# Projects & Work folder aliases
+alias @projects='if ! [ -d "$HOME/Projects" ]; then mkdir -p "$HOME/Projects"; fi; cd "$HOME/Projects";'
+alias @work='if ! [ -d "$HOME/Work" ]; then mkdir -p "$HOME/Work"; fi; cd "$HOME/Work";'
