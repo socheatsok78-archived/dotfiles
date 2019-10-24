@@ -17,6 +17,7 @@ alias reload='source ~/.zshrc'
 # fs
 alias ls='ls -GpF'
 alias ll='ls -alGpF'
+alias lh="ll -h" # human readable file sizes
 
 # Tools
 # - ignore alias: \cat or command cat
