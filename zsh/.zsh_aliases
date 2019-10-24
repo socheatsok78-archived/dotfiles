@@ -6,6 +6,7 @@ alias ohmyzsh="$GUI_EDITOR ~/.oh-my-zsh"
 alias zshreload="source ~/.zshrc"
 
 # Aliases
+alias back='if [ -n "$OLDPWD" ]; then cd "$OLDPWD"; fi'
 alias .2='cd ../..'
 alias .3='cd ../../..'
 alias .4='cd ../../../..'
