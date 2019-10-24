@@ -20,3 +20,16 @@ fkill() {
         echo $pid | xargs kill -${1:-9}
     fi
 }
+
+# dotfile helper functions
+dotfile_config_folder () {
+    if ! [ -d "$DOTFILE_CONFIG_HOME" ]; then
+        mkdir -p "$DOTFILE_CONFIG_HOME"
+    fi
+}
+
+dotfile_sdk_folder () {
+    if ! [ -d "$DOTFILE_SDK_HOME" ]; then
+        mkdir -p "$DOTFILE_SDK_HOME"
+    fi
+}
