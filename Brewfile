@@ -22,3 +22,6 @@ brew "httpie"
 brew "thefuck"              # No fuck given
 brew "jq"                   # lightweight and flexible command-line JSON processor
 brew "heroku/brew/heroku"
+
+# Additional Cask
+cask "ngrok"
