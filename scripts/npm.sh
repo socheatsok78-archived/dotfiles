@@ -17,7 +17,7 @@ function install_npm_packages () {
 
 function main () {
     if [ `command -v npm` ]; then
-        c.info "Installing NPM Packages..."
+        c.warn "Installing NPM Packages..."
         install_npm_packages
         c.success "NPM Packages is installed!"
     else
