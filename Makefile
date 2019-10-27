@@ -33,6 +33,7 @@ executable:
 	chmod +x ./etc/.bin/*
 	chmod +x ./template/*.sh
 	@echo ">>> All scripts & tools are executable!"
+
 web-server:
 	@echo ">>> Installing Web Server"
 	./template/web-server.sh
