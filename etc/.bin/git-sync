@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-# Syncing a fork
+# Sync a fork of a repository to keep it up-to-date with the upstream repository.
 # https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/syncing-a-fork
 
 set -e
