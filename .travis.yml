@@ -18,6 +18,9 @@ jobs:
     - stage: mac
       name: Install Web Server Services
       os: osx
+      addons:
+        homebrew:
+          update: true
       language: ruby
       rvm:
         - 2.4.1
