@@ -16,6 +16,14 @@ jobs:
       script:
         - make install
     - stage: mac
+      name: Install Web Server Services
+      os: osx
+      language: ruby
+      rvm:
+        - 2.4.1
+      script:
+        - make web-server
+    - stage: mac
       name: One-Click Installer
       os: osx
       language: ruby

@@ -32,6 +32,10 @@ executable:
 	chmod +x ./tools/*.sh
 	chmod +x ./etc/.bin/*
 	@echo ">>> All scripts & tools are executable!"
+web-server:
+	@echo ">>> Installing Web Server"
+	cd template/develop
+	brew bundle --verbose
 
 dependencies:
 	./tools/dependencies.sh
