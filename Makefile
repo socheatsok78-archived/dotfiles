@@ -35,8 +35,7 @@ executable:
 	@echo ">>> All scripts & tools are executable!"
 web-server:
 	@echo ">>> Installing Web Server"
-	cd template/develop
-	brew bundle --verbose
+	./template/web-server.sh
 
 dependencies:
 	./tools/dependencies.sh

@@ -40,16 +40,6 @@ function brew_update () {
     brew update
 }
 
-function brew_install_bundle () {
-    if [ -f "Brewfile" ]; then
-        c.info "Installing Brew Packages via Brewfile..."
-       brew bundle # Install Brew Packages via Brewfile
-       c.success "Brew Packages is installed!"
-    else
-        c.error "Brewfile not found!"
-    fi
-}
-
 function main () {
     check_brew_installation
     brew_update

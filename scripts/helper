@@ -20,6 +20,21 @@ function make_local_bin () {
     mkdir -p "$LOCAL_BIN"
 }
 
+function brew_install_bundle () {
+    if [ -f "Brewfile" ]; then
+        c.info "Installing Brew Packages via Brewfile..."
+        if [ -n "$CI" ]; then
+            brew bundle --verbose # Install Brew Packages via Brewfile
+        else
+            brew bundle # Install Brew Packages via Brewfile
+        fi
+        
+        c.success "Brew Packages is installed!"
+    else
+        c.error "Brewfile not found!"
+    fi
+}
+
 # ========================================
 # Logger
 # ========================================

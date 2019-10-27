@@ -9,6 +9,6 @@ function install_web_server () {
     cd ./template/web-server
 
     brew update
-    brew bundle
+    brew_install_bundle
 }
 
