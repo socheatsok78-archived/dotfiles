@@ -12,3 +12,9 @@ function install_web_server () {
     brew_install_bundle
 }
 
+function main () {
+    install_web_server
+}
+
+# Entrypoint
+main;
