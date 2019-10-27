@@ -6,5 +6,6 @@ set -e
 ./scripts/zsh.sh
 ./scripts/xcode.sh
 ./scripts/brew.sh
+./scripts/composer.sh
 ./scripts/npm.sh
 ./scripts/other.sh

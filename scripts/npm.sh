@@ -2,10 +2,17 @@
 
 source ./scripts/helper
 
+function npm_install_global () {
+    c.info "Installing $1..."
+    npm install -g "$1"
+    c.success "$1 successfully installed!"
+}
+
+
 function install_npm_packages () {
-    npm install -g http-server  # serve all everything
-    npm install -g ndb          # improved debugging experience for Node.js
-    # npm install -g tiny-care-terminal    # A little dashboard that tries to take care of you when you're using your terminal.
+    npm_install_global http-server  # serve all everything
+    npm_install_global ndb          # improved debugging experience for Node.js
+    # npm_install_global tiny-care-terminal    # A little dashboard that tries to take care of you when you're using your terminal.
 }
 
 function main () {
