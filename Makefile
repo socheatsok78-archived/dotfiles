@@ -1,7 +1,7 @@
 STOW ?= stow
 HOMEDIR := "$(shell echo ${HOME})"
 DOTDIR = $(shell pwd)
-DIRS ?= zsh ssh etc
+DIRS ?= zsh etc
 IGNORE = .DS_Store
 
 setup: executable configure dependencies
