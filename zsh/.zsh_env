@@ -14,6 +14,7 @@ export PATH="$PATH:$HOME/.local/bin:$HOME/.bin"
 # ========================================
 # JAVA Home
 # ========================================
-test -e "/usr/libexec/java_home" && {
+if [ -f "/usr/libexec/java_home" ]; then
     export JAVA_HOME=$(/usr/libexec/java_home --failfast)
-}
+fi
+
