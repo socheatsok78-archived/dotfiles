@@ -1,0 +1,40 @@
+#!/usr/bin/env bash
+
+# Syncing a fork
+# https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/syncing-a-fork
+
+set -e
+
+git-sync() {
+    local UPSTREAM=(`git remote | grep upstream`)
+
+    if [ -n "$UPSTREAM" ]; then
+        local CURRENT_BRANCH=$(git --no-pager branch | grep '*' | awk '{print $2}')
+        local FETCH_RESULT=$(git fetch upstream)
+
+        if ! [ -n "$FETCH_RESULT" ]; then
+            echo "Your local reposition is up-to-date with your upstream!"
+            exit 0
+        fi
+        
+        echo -e "Syncing local repository with upstream..."
+        echo -e "$FETCH_RESULT"
+
+        echo "Current working branch: $CURRENT_BRANCH"
+
+        local REMOTE_BRANCH=$(git --no-pager branch -r | grep "upstream/$CURRENT_BRANCH")
+        if [ -n "$REMOTE_BRANCH" ]; then
+            echo "Remote working branch: upstream/$CURRENT_BRANCH"
+            git merge upstream/$CURRENT_BRANCH
+        else
+            echo "Remote working branch: upstream/master"
+            git checkout master
+            git merge upstream/master
+        fi
+    else
+        echo "Unable to find remote 'upstream' in your repository!"
+        exit 2
+    fi
+}
+
+git-sync "$@"
