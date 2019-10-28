@@ -6,7 +6,7 @@ source ./scripts/helper
 
 function install_web_server () {
     c.log "Installing Web Server Service..."
-    cd ./template/web-server
+    cd ./template/server
 
     brew update
     brew_install_bundle
