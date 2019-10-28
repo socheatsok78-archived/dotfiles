@@ -26,9 +26,12 @@ function make_local_bin () {
     mkdir -p "$LOCAL_BIN"
 }
 
+# ========================================
+# Homebrew
+# ========================================
 function brew_install_bundle () {
     if [ -f "Brewfile" ]; then
-        c.info "Installing Brew Packages via Brewfile..."
+        log_install "Brew Packages via Brewfile..."
         if [ -n "$CI" ]; then
             brew bundle --verbose # Install Brew Packages via Brewfile
         else
@@ -71,3 +74,16 @@ function c.danger() {
 function c.error () {
     c.danger "$@"
 }
+
+function log_install () {
+    echo -e ">>> ${blue}[INSTALL]${reset}: $@"
+}
+
+function log_uninstall () {
+    echo -e ">>> ${yellow}[UNINSTALL]${reset}: $@"
+}
+
+function log_install_success () {
+    echo -e "${green}[SUCCESS]${reset}: $@"
+}
+

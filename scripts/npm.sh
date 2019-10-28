@@ -3,9 +3,8 @@
 source ./scripts/helper
 
 function npm_install_global () {
-    c.info "Installing $1..."
+    log_install "$1"
     npm install -g "$1"
-    c.success "$1 successfully installed!"
 }
 
 
