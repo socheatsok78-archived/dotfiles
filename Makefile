@@ -38,7 +38,7 @@ executable:
 
 web-server:
 	@echo ">>> Installing Web Server"
-	./template/web-server.sh
+	./template/server/install.sh
 
 dependencies:
 	./tools/dependencies.sh
