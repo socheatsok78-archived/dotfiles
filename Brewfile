@@ -26,5 +26,8 @@ brew "jq"                   # lightweight and flexible command-line JSON process
 brew "awsebcli"
 brew "heroku/brew/heroku"
 
+# Download Tools
+brew "youtube-dl"
+
 # Additional Cask
 cask "ngrok"
