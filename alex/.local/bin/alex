@@ -1,0 +1,34 @@
+#!/usr/bin/env bash
+
+#/ Usage: alex [command] [task]
+#/ Run a given task within the script
+#/
+#/ [command]-[task]:        Description:
+#/ project-prepare:         Run Heroku styled project management
+#/
+
+# help()
+function help () {
+    grep ^#/ <"$0"| cut -c4-
+    exit 2
+}
+
+# main()
+function main () {
+    local args="$@"
+
+    if [ -n "$args" ]; then
+        local command=alex-${args// /-}
+        exec $command
+    else
+        help
+    fi
+}
+
+# --help
+test "$1" = "--help" && {
+    help
+}
+
+# exec main()
+main "$@"
