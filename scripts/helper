@@ -9,6 +9,12 @@
 source ./zsh/.zsh_env
 export LOCAL_BIN="$HOME/.local/bin"
 
+reset="\033[0m"
+yellow="\033[33m"
+blue="\033[94m"
+green="\033[92m"
+red="\033[1;31m"
+
 # ========================================
 # helper
 # ========================================
@@ -43,23 +49,23 @@ function c.log() {
 }
 
 function c.line() {
-    echo -e "\033[92m>>> $@\033[0m"
+    echo -e "${green}>>> $@ ${reset}"
 }
 
 function c.warn() {
-    echo -e "\033[33m>>> $@\033[0m"
+    echo -e "${yellow}>>> $@ ${reset}"
 }
 
 function c.info() {
-    echo -e "\033[94m>>> $@\033[0m"
+    echo -e "${blue}>>> $@ ${reset}"
 }
 
 function c.success() {
-    echo -e "\033[92m>>> $@\033[0m"
+    echo -e "${green}>>> $@ ${reset}"
 }
 
 function c.danger() {
-    echo -e "\033[1;31m>>> $@\033[0m"
+    echo -e "${red}>>> $@ ${reset}"
 }
 
 function c.error () {
