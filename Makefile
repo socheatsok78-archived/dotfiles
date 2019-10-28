@@ -4,6 +4,8 @@ DOTDIR = $(shell pwd)
 DIRS ?= zsh etc
 IGNORE = .DS_Store
 
+.PHONY: setup
+
 setup: executable configure dependencies
 
 install: link post-install
