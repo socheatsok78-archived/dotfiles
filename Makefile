@@ -33,7 +33,7 @@ executable:
 	chmod +x ./scripts/*.sh
 	chmod +x ./tools/*.sh
 	chmod +x ./etc/.bin/*
-	chmod +x ./template/*.sh
+	chmod +x ./template/**/*.sh
 	@echo ">>> All scripts & tools are executable!"
 
 web-server:
