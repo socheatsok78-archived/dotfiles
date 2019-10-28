@@ -5,6 +5,7 @@ Dart-Code.flutter
 eamodio.gitlens
 felixfbecker.php-debug
 felixrieseberg.vsc-travis-ci-status
+GitHub.vscode-pull-request-github
 googlecloudtools.cloudcode
 johnpapa.vscode-peacock
 karigari.chat
