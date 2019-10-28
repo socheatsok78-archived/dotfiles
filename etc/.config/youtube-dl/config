@@ -1,5 +1,8 @@
 # Lines starting with # are 
 
+# Display progress in console titlebar
+--console-title
+
 # Write video metadata to a .info.json file
 --write-info-json
 
@@ -17,3 +20,10 @@
 
 # Force resume of partially downloaded files.
 --continue
+
+# Execute a command on the file after
+# downloading, similar to find's -exec
+# syntax. Example: --exec 'adb push {}
+# /sdcard/Music/ && rm {}'
+#
+# --exec CMD
