@@ -25,7 +25,7 @@ test -e "$HOME/.zsh_profile" && source "$HOME/.zsh_profile"
 
 ## ZSH First-party plugins you should use
 ```sh
-plugins=(git git-flow yarn last-working-dir thefuck)
+plugins=(git git-flow yarn last-working-dir thefuck laravel)
 ```
 Feel free to add your own, find more plugins here [oh-my-zsh/wiki/plugins](https://github.com/robbyrussell/oh-my-zsh/wiki/Plugins)
 
