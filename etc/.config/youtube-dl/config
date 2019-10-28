@@ -1,0 +1,19 @@
+# Lines starting with # are 
+
+# Write video metadata to a .info.json file
+--write-info-json
+
+# Always extract audio
+# -x
+
+# Do not copy the mtime
+--no-mtime
+
+# Use this proxy
+# --proxy 127.0.0.1:3128
+
+# Save all videos under Movies directory in your home directory
+-o ~/Movies/%(title)s.%(ext)s
+
+# Force resume of partially downloaded files.
+--continue
