@@ -3,6 +3,9 @@
 # Display progress in console titlebar
 --console-title
 
+# Download only Best Video and Audio
+--format bestvideo+bestaudio/best
+
 # Write video metadata to a .info.json file
 --write-info-json
 
@@ -16,7 +19,7 @@
 # --proxy 127.0.0.1:3128
 
 # Save all videos under Downloads directory in your home directory
--o ~/Downloads/Videos/%(title)s.%(ext)s
+-o ~/Downloads/Videos/%(title)s/%(title)s.%(ext)s
 
 # Force resume of partially downloaded files.
 --continue
