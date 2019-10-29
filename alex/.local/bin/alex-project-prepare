@@ -56,6 +56,14 @@ function composer_has_script () {
     cat composer.json | jq -eM ".scripts" | grep "$script" >/dev/null
 }
 
+# Check if Composer Package Exist
+function composer_has_package () {
+    local package=$1
+    shift
+
+    composer info | awk '{print $1}' | grep "$package" 1>/dev/null
+}
+
 # Run Composer Script
 function composer_run_script () {
     local script=$1
