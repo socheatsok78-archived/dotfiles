@@ -6,34 +6,21 @@
 set -e
 
 git-sync() {
-    local UPSTREAM=(`git remote | grep upstream`)
+    echo -e "Syncing local repository with upstream..."
 
-    if [ -n "$UPSTREAM" ]; then
-        local CURRENT_BRANCH=$(git --no-pager branch | grep '*' | awk '{print $2}')
-        local FETCH_RESULT=$(git fetch upstream)
+    if git fetch upstream; then
+        local LOCAL_BRANCH=$(git --no-pager branch | grep '*' | awk '{print $2}')
+        local REMOTE_BRANCH=$(git --no-pager branch -r | grep "upstream/$CURRENT_BRANCH" | tr -d ' ')
 
-        if ! [ -n "$FETCH_RESULT" ]; then
-            echo "Your local reposition is up-to-date with your upstream!"
-            exit 0
-        fi
-        
-        echo -e "Syncing local repository with upstream..."
-        echo -e "$FETCH_RESULT"
+        echo "Current working branch: $LOCAL_BRANCH"
 
-        echo "Current working branch: $CURRENT_BRANCH"
-
-        local REMOTE_BRANCH=$(git --no-pager branch -r | grep "upstream/$CURRENT_BRANCH")
         if [ -n "$REMOTE_BRANCH" ]; then
-            echo "Remote working branch: upstream/$CURRENT_BRANCH"
-            git merge upstream/$CURRENT_BRANCH
+            git merge upstream/$LOCAL_BRANCH
         else
-            echo "Remote working branch: upstream/master"
             git checkout master
             git merge upstream/master
         fi
-    else
-        echo "Unable to find remote 'upstream' in your repository!"
-        exit 2
+        
     fi
 }
 
