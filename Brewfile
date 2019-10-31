@@ -27,6 +27,9 @@ brew "awsebcli"
 brew "doctl"
 brew "heroku/brew/heroku"
 
+# Unit Test
+brew "phpunit"
+
 # Download Tools
 brew "youtube-dl"
 
