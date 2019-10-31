@@ -22,6 +22,7 @@ ms-vscode.atom-keybindings
 ms-vsliveshare.vsliveshare
 ms-vsliveshare.vsliveshare-audio
 ms-vsliveshare.vsliveshare-pack
+msjsdiag.debugger-for-chrome
 neilbrayfield.php-docblocker
 octref.vetur
 rebornix.ruby
