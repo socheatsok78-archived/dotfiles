@@ -24,6 +24,7 @@ brew "jq"                   # lightweight and flexible command-line JSON process
 
 # Deployment Tools
 brew "awsebcli"
+brew "doctl"
 brew "heroku/brew/heroku"
 
 # Download Tools
