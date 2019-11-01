@@ -1,4 +1,5 @@
 aaron-bond.better-comments
+austenc.laravel-blade-spacer
 bmewburn.vscode-intelephense-client
 CoenraadS.bracket-pair-colorizer
 Dart-Code.dart-code
@@ -25,6 +26,7 @@ ms-vsliveshare.vsliveshare-pack
 msjsdiag.debugger-for-chrome
 neilbrayfield.php-docblocker
 octref.vetur
+onecentlin.laravel-blade
 rebornix.ruby
 redhat.vscode-yaml
 Remisa.shellman
