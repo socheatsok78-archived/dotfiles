@@ -11,7 +11,9 @@ felixfbecker.php-debug
 felixrieseberg.vsc-travis-ci-status
 GitHub.vscode-pull-request-github
 googlecloudtools.cloudcode
+IBM.output-colorizer
 johnpapa.vscode-peacock
+kamikillerto.vscode-colorize
 karigari.chat
 mads-hartmann.bash-ide-vscode
 mechatroner.rainbow-csv
