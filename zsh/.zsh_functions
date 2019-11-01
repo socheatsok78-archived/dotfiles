@@ -1,5 +1,13 @@
 # vim: ft=zsh
 
+# Clear
+clear() {
+    local CLEAR_BIN="/usr/bin/clear"
+
+    $CLEAR_BIN
+    welcome;
+}
+
 # Local IP
 localip() {
     ifconfig | grep "inet " | grep -Fv 127.0.0.1 | awk '{print $2}'
