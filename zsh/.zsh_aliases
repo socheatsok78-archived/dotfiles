@@ -26,6 +26,7 @@ alias cat='bat'
 alias ping='prettyping --nolegend'
 alias top='sudo htop' # alias top and fix high sierra bug
 alias help='tldr'
+alias hosts="sudo nano /etc/hosts"
 
 # No fuck given
 alias fk='fuck'
@@ -39,5 +40,5 @@ alias path='echo -e ${PATH//:/\\n}'
 alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
 
 # Projects & Work folder aliases
-alias @projects='if ! [ -d "$HOME/Projects" ]; then mkdir -p "$HOME/Projects"; fi; cd "$HOME/Projects";'
+alias @project='if ! [ -d "$HOME/Projects" ]; then mkdir -p "$HOME/Projects"; fi; cd "$HOME/Projects";'
 alias @work='if ! [ -d "$HOME/Work" ]; then mkdir -p "$HOME/Work"; fi; cd "$HOME/Work";'
