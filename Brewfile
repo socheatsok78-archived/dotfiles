@@ -1,4 +1,5 @@
 # Brewfile
+tap "facebook/fb"
 tap "heroku/brew"
 
 # Makefile Requirements
