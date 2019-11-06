@@ -1,5 +1,4 @@
 aaron-bond.better-comments
-austenc.laravel-blade-spacer
 bmewburn.vscode-intelephense-client
 CoenraadS.bracket-pair-colorizer
 Dart-Code.dart-code
