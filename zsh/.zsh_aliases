@@ -22,6 +22,7 @@ alias lx="exa --long --all --git"
 
 # Tools
 # - ignore alias: \cat or command cat
+alias gpg="gpg2"
 alias cat='bat'
 alias ping='prettyping --nolegend'
 alias top='sudo htop' # alias top and fix high sierra bug
