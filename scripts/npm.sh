@@ -2,20 +2,29 @@
 
 source ./scripts/helper
 
-function npm_install_global () {
+node_version () {
+    c.info "Node: $(node -v)"
+    c.info "NPM: $(npm -v)"
+}
+
+function npm_install () {
     log_install "$1"
     npm install -g "$1"
 }
 
 
 function install_npm_packages () {
-    npm_install_global http-server  # serve all everything
-    npm_install_global ndb          # improved debugging experience for Node.js
+    npm_install 'http-server'     # serve all everything
+    npm_install 'ndb'             # improved debugging experience for Node.js
+    npm_install 'typescript'      # TypeScript CLI
+    npm_install '@vue/cli'        # Vue CLI
     # npm_install_global tiny-care-terminal    # A little dashboard that tries to take care of you when you're using your terminal.
 }
 
 function main () {
     if [ `command -v npm` ]; then
+        node_version
+
         c.warn "Installing NPM Packages..."
         install_npm_packages
         c.success "NPM Packages is installed!"
