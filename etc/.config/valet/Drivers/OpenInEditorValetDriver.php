@@ -1,5 +1,9 @@
 <?php
 
+/**
+ * Open In Editor for Vue Devtools
+ * @author Socheat <alex@socheat.net>
+ */
 class OpenInEditorValetDriver extends ValetDriver
 {
     /**
