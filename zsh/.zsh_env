@@ -4,6 +4,9 @@ export DOTFILE_HOME="$HOME/.dotfile"
 export DOTFILE_SDK_HOME="$HOME/.dotfile.sdk.d"
 export DOTFILE_CONFIG_HOME="$HOME/.dotfile.conf.d"
 
+# Language
+export LANG=en_US.UTF-8
+
 # Preferred editor for local and remote sessions
 export EDITOR='nano'
 export GUI_EDITOR='code'
@@ -17,4 +20,3 @@ export PATH="$PATH:$HOME/.local/bin:$HOME/.bin"
 if [ -f "/usr/libexec/java_home" ]; then
     export JAVA_HOME=$(/usr/libexec/java_home --failfast)
 fi
-
