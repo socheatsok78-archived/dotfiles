@@ -15,6 +15,12 @@ function install_cheat_sh () {
 function install_gitignore () {
     log_install "git-ignore alias"
     git config --global alias.ignore '!gi() { curl -sL https://www.gitignore.io/api/$@ ;}; gi'
+
+    log_install "git-accept-ours alias"
+    git config --global alias.accept-ours = "!f() { [ -z \"$@\" ] && set - '.'; git checkout --ours -- \"$@\"; git add -u -- \"$@\"; }; f"
+
+    log_install "git-accept-theirs alias"
+    git config --global alias.accept-theirs = "!f() { [ -z \"$@\" ] && set - '.'; git checkout --theirs -- \"$@\"; git add -u -- \"$@\"; }; f"
 }
 
 function main () {
