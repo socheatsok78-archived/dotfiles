@@ -18,7 +18,7 @@ function install_npm_packages () {
     npm_install 'ndb'             # improved debugging experience for Node.js
     npm_install 'typescript'      # TypeScript CLI
     npm_install '@vue/cli'        # Vue CLI
-    # npm_install_global tiny-care-terminal    # A little dashboard that tries to take care of you when you're using your terminal.
+    # npm_install 'tiny-care-terminal'    # A little dashboard that tries to take care of you when you're using your terminal.
 }
 
 function main () {
