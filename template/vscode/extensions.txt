@@ -30,6 +30,7 @@ neilbrayfield.php-docblocker
 octref.vetur
 onecentlin.laravel-blade
 rebornix.ruby
+redhat.vscode-xml
 redhat.vscode-yaml
 Remisa.shellman
 Shan.code-settings-sync
