@@ -36,4 +36,5 @@ Remisa.shellman
 Shan.code-settings-sync
 WallabyJs.quokka-vscode
 wesbos.theme-cobalt2
+wix.vscode-import-cost
 xyr0z1ne.deeold
