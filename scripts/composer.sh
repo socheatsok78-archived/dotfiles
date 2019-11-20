@@ -16,6 +16,9 @@ function main () {
         composer_install_global "laravel/installer"
         composer_install_global "laravel/valet"
         composer_install_global "laravel/envoy"
+
+        composer_install_global "laravel-zero/installer"
+
         composer_install_global "squizlabs/php_codesniffer"
 
         c.success "Composer Packages is installed!"
