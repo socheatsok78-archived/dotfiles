@@ -1,3 +1,5 @@
+Brewfile.lock.json
+
 # Ignore all logs files
 *.log
 
