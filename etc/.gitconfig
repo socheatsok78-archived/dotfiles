@@ -1,0 +1,21 @@
+[user]
+	name = Socheat Sok
+	email = alex@socheat.net
+	signingkey = 73E235BAB2858AF5EBBBD4063BDF99342AB2A23E
+
+[gpg]
+	program = /usr/local/bin/gpg2
+
+[commit]
+	gpgsign = true
+
+[alias]
+	ignore = "!gi() { curl -sL https://www.gitignore.io/api/$@ ;}; gi"
+	accept-ours = "!f() { [ -z \"$@\" ] && set - .; git checkout --ours -- \"$@\"; git add -u -- \"$@\"; }; f"
+	accept-theirs = "!f() { [ -z \"$@\" ] && set - .; git checkout --theirs -- \"$@\"; git add -u -- \"$@\"; }; f"
+
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
