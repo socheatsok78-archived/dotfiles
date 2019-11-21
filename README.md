@@ -39,9 +39,9 @@ dotfile_update
 There are some great dotfiles around:
 - [terkelg/dotfiles](https://github.com/terkelg/dotfiles)
 - [MikeMcQuaid/dotfiles](https://github.com/MikeMcQuaid/dotfiles)
+- [lifepillar/dotfiles](https://github.com/lifepillar/dotfiles)
 
 ## :memo: License
 Licensed under the [MIT License](LICENSE).
 
 [travis-ci-status]: https://travis-ci.com/socheatsok78/.dotfile
-
