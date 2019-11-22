@@ -12,7 +12,7 @@ install: link post-install
 
 configure:
 	@echo ">>> Configuring dotfile environment..."
-	./scripts/dotfile.sh
+	@./scripts/dotfile.sh
 
 link:
 	@echo ">>> Installing dotfile into $(HOMEDIR)/ folder...\n"
@@ -21,7 +21,7 @@ link:
 
 post-install:
 	@echo "\n>>> Executing Post-install Script"
-	./tools/post-install.sh
+	@./tools/post-install.sh
 
 uninstall:
 	@echo Uninstalling dotfile from ${HOMEDIR}/ folder...
@@ -30,16 +30,15 @@ uninstall:
 
 executable:
 	@echo ">>> Making scripts executable..."
-	chmod +x ./scripts/*.sh
-	chmod +x ./tools/*.sh
-	chmod +x ./etc/.bin/*
-	chmod +x ./template/**/*.sh
+	@chmod +x ./scripts/*.sh
+	@chmod +x ./tools/*.sh
+	@chmod +x ./etc/.bin/*
+	@chmod +x ./template/**/*.sh
 	@echo ">>> All scripts & tools are executable!"
 
 web-server:
 	@echo ">>> Installing Web Server"
-	./template/server/install.sh
+	@./template/server/install.sh
 
 dependencies:
-	./tools/dependencies.sh
-
+	@./tools/dependencies.sh
