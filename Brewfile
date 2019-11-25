@@ -6,6 +6,7 @@ tap "heroku/brew"
 brew "stow"
 
 # Development Environment
+brew "git"
 brew "composer"
 brew "node"                 # Node LTS
 brew "node@10"              # Node v10
