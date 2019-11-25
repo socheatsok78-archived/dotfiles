@@ -3,12 +3,30 @@
 	email = alex@socheat.net
 	signingkey = 73E235BAB2858AF5EBBBD4063BDF99342AB2A23E
 
+[core]
+	excludesfile = ~/.gitignore
+
 [gpg]
 	program = /usr/local/bin/gpg2
 
 [commit]
 	gpgsign = true
 	template = ~/.gitmessage
+
+[diff]
+  # Use better, descriptive initials (c, i, w) instead of a/b.
+  mnemonicPrefix = true
+  # Show renames/moves as such
+  renames = true
+  # When using --word-diff, assume --word-diff-regex=.
+  wordRegex = .
+  # Display submodule-related information (commit listings)
+  submodule = log
+  # Use VSCode as default diff tool when running `git diff-tool`
+  tool = vscode
+
+[difftool "vscode"]
+  cmd = code --wait --diff $LOCAL $REMOTE
 
 [alias]
 	ignore = "!gi() { curl -sL https://www.gitignore.io/api/$@ ;}; gi"
