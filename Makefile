@@ -37,8 +37,10 @@ executable:
 	@echo ">>> All scripts & tools are executable!"
 
 web-server:
-	@echo ">>> Installing Web Server"
-	@./template/server/install.sh
+	@echo ">>> Installing web server dependencies..."
+	@brew bundle \
+		--no-lock \
+		--file="./homebrew/WebServer.Brewfile"
 
 dependencies:
 	@./tools/dependencies.sh

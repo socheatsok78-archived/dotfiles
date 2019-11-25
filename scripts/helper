@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-# \033 or \e as an Escape character starts the escape sequence, 
+# \033 or \e as an Escape character starts the escape sequence,
 # which in this case contains the controls to change colors.
 
 # https://www.shellhacks.com/bash-colors/
@@ -33,11 +33,16 @@ function brew_install_bundle () {
     if [ -f "Brewfile" ]; then
         log_install "Brew Packages via Brewfile..."
         if [ -n "$CI" ]; then
-            brew bundle --verbose # Install Brew Packages via Brewfile
+            # Install Brew Packages via Brewfile
+            brew bundle \
+                --no-lock \
+                --verbose
         else
-            brew bundle # Install Brew Packages via Brewfile
+            # Install Brew Packages via Brewfile
+            brew bundle \
+                --no-lock
         fi
-        
+
         c.success "Brew Packages is installed!"
     else
         c.error "Brewfile not found!"
@@ -86,4 +91,3 @@ function log_uninstall () {
 function log_install_success () {
     echo -e "${green}[SUCCESS]${reset}: $@"
 }
-

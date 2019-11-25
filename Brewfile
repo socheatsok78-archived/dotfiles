@@ -34,6 +34,3 @@ brew "phpunit"
 
 # Download Tools
 brew "youtube-dl"
-
-# Additional Cask
-cask "ngrok"

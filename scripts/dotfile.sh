@@ -21,9 +21,15 @@ function dotfile_sdk_folder () {
     c.success "$DOTFILE_SDK_HOME created!"
 }
 
+function dotfile_homebrew_config () {
+    export HOMEBREW_BUNDLE_NO_LOCK=true
+}
+
+
 function main() {
     dotfile_config_folder
     dotfile_sdk_folder
+    dotfile_homebrew_config
 }
 
 # Entrypoint
