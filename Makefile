@@ -1,7 +1,7 @@
 STOW ?= stow
 HOMEDIR := "$(shell echo ${HOME})"
 DOTDIR = $(shell pwd)
-DIRS ?= zsh alex etc
+DIRS ?= zsh git alex etc
 IGNORE = .DS_Store
 
 .PHONY: setup

@@ -8,6 +8,7 @@
 
 [commit]
 	gpgsign = true
+	template = ~/.gitmessage
 
 [alias]
 	ignore = "!gi() { curl -sL https://www.gitignore.io/api/$@ ;}; gi"
