@@ -30,6 +30,7 @@ msjsdiag.debugger-for-chrome
 neilbrayfield.php-docblocker
 octref.vetur
 onecentlin.laravel-blade
+onecentlin.laravel5-snippets
 rebornix.ruby
 redhat.vscode-xml
 redhat.vscode-yaml
