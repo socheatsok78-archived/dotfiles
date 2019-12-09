@@ -9,6 +9,7 @@ EditorConfig.EditorConfig
 esbenp.prettier-vscode
 felixfbecker.php-debug
 felixrieseberg.vsc-travis-ci-status
+getpsalm.psalm-vscode-plugin
 GitHub.vscode-pull-request-github
 googlecloudtools.cloudcode
 IBM.output-colorizer
