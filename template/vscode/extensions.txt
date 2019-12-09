@@ -32,6 +32,7 @@ neilbrayfield.php-docblocker
 octref.vetur
 onecentlin.laravel-blade
 onecentlin.laravel5-snippets
+raathigeshan.fabulous
 rebornix.ruby
 redhat.vscode-xml
 redhat.vscode-yaml
