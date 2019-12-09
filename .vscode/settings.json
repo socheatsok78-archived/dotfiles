@@ -1,4 +1,26 @@
 {
+    // =======================================================
+    // Colors & Theme Settings
+    // =======================================================
+    "peacock.color": "#ffb238",
+    "workbench.colorCustomizations": {
+        "activityBar.background": "#ffc66b",
+        "activityBar.activeBorder": "#009f62",
+        "activityBar.foreground": "#15202b",
+        "activityBar.inactiveForeground": "#15202b99",
+        "activityBarBadge.background": "#009f62",
+        "activityBarBadge.foreground": "#e7e7e7",
+        "titleBar.activeBackground": "#ffb238",
+        "titleBar.inactiveBackground": "#ffb23899",
+        "titleBar.activeForeground": "#15202b",
+        "titleBar.inactiveForeground": "#15202b99",
+        "statusBar.background": "#ffb238",
+        "statusBarItem.hoverBackground": "#ff9e05",
+        "statusBar.foreground": "#15202b"
+    },
+    // =======================================================
+    // Files Associations & Language Base Settings
+    // =======================================================
     "files.associations": {
         ".zsh_*": "shellscript",
         "install": "shellscript",
