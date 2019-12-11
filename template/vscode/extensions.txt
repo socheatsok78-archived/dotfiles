@@ -1,4 +1,6 @@
 aaron-bond.better-comments
+alefragnani.pascal
+alefragnani.pascal-formatter
 bmewburn.vscode-intelephense-client
 CoenraadS.bracket-pair-colorizer
 Dart-Code.dart-code
@@ -13,6 +15,7 @@ getpsalm.psalm-vscode-plugin
 GitHub.vscode-pull-request-github
 googlecloudtools.cloudcode
 IBM.output-colorizer
+idleberg.innosetup
 johnpapa.vscode-peacock
 kamikillerto.vscode-colorize
 karigari.chat
