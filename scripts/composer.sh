@@ -9,7 +9,7 @@ function composer_install_global () {
     composer global require "$1"
 }
 
-function main () {
+function main_old () {
     if [ `command -v composer` ]; then
         c.warn "Installing Composer Packages..."
 
@@ -20,6 +20,18 @@ function main () {
         composer_install_global "laravel-zero/installer"
 
         composer_install_global "squizlabs/php_codesniffer"
+
+        c.success "Composer Packages is installed!"
+    else
+        c.error "[SKIP]: Composer not found!"
+    fi
+}
+
+function main () {
+    if [ `command -v composer` ]; then
+        c.warn "Installing Composer Packages..."
+
+        composer global install
 
         c.success "Composer Packages is installed!"
     else
