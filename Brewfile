@@ -28,6 +28,7 @@ brew "jq"                   # lightweight and flexible command-line JSON process
 brew "awsebcli"
 brew "doctl"
 brew "travis"
+brew "now-cli"
 brew "heroku/brew/heroku"
 
 # Unit Test
