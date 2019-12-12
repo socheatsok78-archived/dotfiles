@@ -46,3 +46,7 @@ alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
 # Projects & Work folder aliases
 alias @project='if ! [ -d "$HOME/Projects" ]; then mkdir -p "$HOME/Projects"; fi; cd "$HOME/Projects";'
 alias @work='if ! [ -d "$HOME/Work" ]; then mkdir -p "$HOME/Work"; fi; cd "$HOME/Work";'
+
+# System tools aliases
+alias ssh-rm="ssh-keygen -R"
+alias known-hosts="cat ~/.ssh/known_hosts | awk '{print \$1}'"
