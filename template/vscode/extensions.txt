@@ -16,6 +16,7 @@ GitHub.vscode-pull-request-github
 googlecloudtools.cloudcode
 IBM.output-colorizer
 idleberg.innosetup
+joaomoreno.github-sharp-theme
 johnpapa.vscode-peacock
 kamikillerto.vscode-colorize
 karigari.chat
