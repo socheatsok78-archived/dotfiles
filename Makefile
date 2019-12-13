@@ -42,5 +42,11 @@ web-server:
 		--no-lock \
 		--file="./homebrew/WebServer.Brewfile"
 
+app:
+	@echo ">>> Installing applications..."
+	@brew bundle \
+		--no-lock \
+		--file="./homebrew/App.Brewfile"
+
 dependencies:
 	@./tools/dependencies.sh
