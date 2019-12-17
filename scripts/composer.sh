@@ -27,11 +27,25 @@ function main_old () {
     fi
 }
 
+function is_lock_exists () {
+    local composer_lock_file="$HOME/.composer/composer.lock"
+
+    if [ -f "$composer_lock_file" ]; then
+        return 0
+    fi
+
+    return 1
+}
+
 function main () {
     if [ `command -v composer` ]; then
-        c.warn "Installing Composer Packages..."
-
-        composer global install
+        if is_lock_exists; then
+            c.warn "Updating Composer Packages..."
+            composer global update
+        else
+            c.warn "Installing Composer Packages..."
+            composer global install
+        fi
 
         c.success "Composer Packages is installed!"
     else
