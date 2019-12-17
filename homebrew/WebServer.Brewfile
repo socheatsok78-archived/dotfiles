@@ -2,7 +2,16 @@
 #  Web-Server
 # -*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
 #
-brew "php" # Server-side Script
-brew "nginx", restart_service: true # Web Server
-brew "mysql", restart_service: true # Database Server
-brew "redis", restart_service: true # Cache Server
+# PHP
+brew "php" # PHP Latest
+# brew "php@7.2" # PHP 7.2
+
+# Web Server
+brew "nginx", restart_service: true # Nginx Web Server
+
+# MySQL
+brew "mysql", restart_service: true # MySQL Latest
+# brew "mysql@5.7", restart_service: false # MySQL 5.7
+
+# Cache Server
+brew "redis", restart_service: true # Redis Server
