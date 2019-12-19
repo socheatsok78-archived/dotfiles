@@ -6,3 +6,4 @@
 #
 cask "virtualbox" # Oracle VirtualBox
 cask "vlc" # VideoLan Media Player
+cask "mounty" # NTFS Helper
