@@ -23,6 +23,7 @@ brew "tree"                 # List directories in a tree structure
 brew "httpie"
 brew "thefuck"              # No fuck given
 brew "jq"                   # lightweight and flexible command-line JSON processor
+brew "scrcpy"               # Display and control your Android device
 
 # Deployment Tools
 brew "awsebcli"
