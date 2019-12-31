@@ -4,7 +4,7 @@
 #
 # PHP
 brew "php" # PHP Latest
-# brew "php@7.2" # PHP 7.2
+brew "php@7.3" # PHP 7.3
 
 # Web Server
 brew "nginx", restart_service: true # Nginx Web Server
