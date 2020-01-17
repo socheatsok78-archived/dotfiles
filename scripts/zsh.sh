@@ -42,10 +42,18 @@ function set_default_shell () {
     fi
 }
 
+function install_ohmyzsh () {
+    if [ -z "$ZSH" ]; then
+        c.info "Installing Oh My ZSH..."
+        sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+    fi
+}
+
 
 function main () {
     check_zsh_installation
     set_default_shell
+    install_ohmyzsh
 }
 
 # Entrypoint
