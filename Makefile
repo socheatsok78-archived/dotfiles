@@ -48,5 +48,11 @@ app:
 		--no-lock \
 		--file="./homebrew/App.Brewfile"
 
+pentest:
+	@echo ">>> Installing applications..."
+	@brew bundle \
+		--no-lock \
+		--file="./homebrew/Pentest.Brewfile"
+
 dependencies:
 	@./tools/dependencies.sh
