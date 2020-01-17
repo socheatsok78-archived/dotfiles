@@ -70,8 +70,12 @@ function brew_update () {
 function main () {
     check_brew_installation
     brew_update
+
     brew_install_bundle
-    brew_install_cask
+
+    case "$(get_os)" in
+        "Darwin")   brew_install_cask    ;;
+    esac
 }
 
 # Entrypoint
