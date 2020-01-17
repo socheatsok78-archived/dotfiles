@@ -58,7 +58,7 @@ function brew_install_cask () {
                 c.error "Brewfile not found!"
             fi
         ;;
-        *)          brew_install_osx    ;;
+        *)  return ;;
     esac
 }
 
@@ -70,12 +70,8 @@ function brew_update () {
 function main () {
     check_brew_installation
     brew_update
-
     brew_install_bundle
-
-    case "$(get_os)" in
-        "Darwin")   brew_install_cask    ;;
-    esac
+    brew_install_cask
 }
 
 # Entrypoint
