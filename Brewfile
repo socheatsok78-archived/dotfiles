@@ -2,6 +2,9 @@
 tap "facebook/fb"
 tap "heroku/brew"
 
+# Cmake
+brew "gcc"
+
 # Makefile Requirements
 brew "stow"
 
