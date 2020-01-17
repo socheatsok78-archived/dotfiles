@@ -1,6 +1,7 @@
 aaron-bond.better-comments
 alefragnani.pascal
 alefragnani.pascal-formatter
+bierner.markdown-preview-github-styles
 bmewburn.vscode-intelephense-client
 CoenraadS.bracket-pair-colorizer
 Dart-Code.dart-code
@@ -20,6 +21,7 @@ joaomoreno.github-sharp-theme
 johnpapa.vscode-peacock
 kamikillerto.vscode-colorize
 karigari.chat
+LoyieKing.smalise
 mads-hartmann.bash-ide-vscode
 mechatroner.rainbow-csv
 mikestead.dotenv
@@ -38,12 +40,20 @@ onecentlin.laravel-blade
 onecentlin.laravel5-snippets
 raathigeshan.fabulous
 rebornix.ruby
+redhat.java
 redhat.vscode-xml
 redhat.vscode-yaml
 Remisa.shellman
 Shan.code-settings-sync
+VisualStudioExptTeam.vscodeintellicode
+vscjava.vscode-java-debug
+vscjava.vscode-java-dependency
+vscjava.vscode-java-pack
+vscjava.vscode-java-test
+vscjava.vscode-maven
 WallabyJs.quokka-vscode
 wesbos.theme-cobalt2
 wingrunr21.vscode-ruby
 wix.vscode-import-cost
 xyr0z1ne.deeold
+yzhang.markdown-all-in-one
