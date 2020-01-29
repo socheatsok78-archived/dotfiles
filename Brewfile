@@ -24,6 +24,7 @@ brew "httpie"
 brew "thefuck"              # No fuck given
 brew "jq"                   # lightweight and flexible command-line JSON processor
 brew "scrcpy"               # Display and control your Android device
+brew "watch"                # Execute a program periodically, showing output fullscreen
 
 # Deployment Tools
 brew "awsebcli"
