@@ -14,9 +14,10 @@ function andrew() {
 function welcome() {
     if [ `command -v lolcat` ]; then
         andrew | lolcat;
-    else
-        andrew;
+        return 0;
     fi
+
+    andrew;
 }
 
 welcome;

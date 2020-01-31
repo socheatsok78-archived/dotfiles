@@ -4,6 +4,9 @@ export DOTFILE_HOME="$HOME/.dotfile"
 export DOTFILE_SDK_HOME="$HOME/.dotfile.sdk.d"
 export DOTFILE_CONFIG_HOME="$HOME/.dotfile.conf.d"
 
+# GPG Default Key
+export DEFAULT_GPGKEY=73E235BA
+
 # Language
 export LANG=en_US.UTF-8
 
