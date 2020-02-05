@@ -39,14 +39,19 @@ function set_default_shell () {
     if ! echo $SHELL | grep zsh 1>/dev/null; then
         c.info "Set ZSH as Default Shell..."
 
-        # sudo sh -c "yes | chsh -s $(which zsh)"
-        sudo sh -c "echo Y | chsh -s $(which zsh)"
+        sudo sh -c "yes | chsh -s $(which zsh)"
     fi
 }
 
 function install_ohmyzsh () {
     if [ -z "$ZSH" ]; then
         c.info "Installing Oh My ZSH..."
+
+        if [ -n "$CI" ]; then
+            export CHSH="no"
+            export RUNZSH="no"
+        fi
+
         sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
     fi
 }
