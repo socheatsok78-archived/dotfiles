@@ -28,7 +28,12 @@ function main_old () {
 }
 
 function is_lock_exists () {
+    local composer_file="$HOME/.composer/composer.json"
     local composer_lock_file="$HOME/.composer/composer.lock"
+
+    if ! [ -f "$composer_file" ]; then
+        return 1
+    fi
 
     if [ -f "$composer_lock_file" ]; then
         return 0
