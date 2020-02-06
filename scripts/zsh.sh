@@ -47,9 +47,10 @@ function install_ohmyzsh () {
     if [ -z "$ZSH" ]; then
         c.info "Installing Oh My ZSH..."
 
+        export RUNZSH="no"
+
         if [ -n "$CI" ]; then
             export CHSH="no"
-            export RUNZSH="no"
         fi
 
         sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
