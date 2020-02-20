@@ -32,6 +32,7 @@
 	ignore = "!gi() { curl -sL https://www.gitignore.io/api/$@ ;}; gi"
 	accept-ours = "!f() { [ -z \"$@\" ] && set - .; git checkout --ours -- \"$@\"; git add -u -- \"$@\"; }; f"
 	accept-theirs = "!f() { [ -z \"$@\" ] && set - .; git checkout --theirs -- \"$@\"; git add -u -- \"$@\"; }; f"
+	dry-commit = commit --allow-empty -m \"init project\"
 
 [filter "lfs"]
 	clean = git-lfs clean -- %f
