@@ -25,7 +25,6 @@ alias lx="exa --long --all --git"
 alias gpg="gpg2"
 alias cat='bat'
 alias ping='prettyping --nolegend'
-alias top='sudo htop' # alias top and fix high sierra bug
 alias help='tldr'
 alias hosts="sudo nano /etc/hosts"
 
