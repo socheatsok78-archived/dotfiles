@@ -1,4 +1,5 @@
 # Brewfile
+tap "github/gh"
 tap "facebook/fb"
 tap "heroku/brew"
 
@@ -27,6 +28,7 @@ brew "scrcpy"               # Display and control your Android device
 brew "watch"                # Execute a program periodically, showing output fullscreen
 
 # Deployment Tools
+brew "gh"
 brew "awsebcli"
 brew "doctl"
 brew "travis"
