@@ -14,6 +14,9 @@ function install_cheat_sh () {
 # Install GitIgnore Command Line
 function install_gitignore () {
     log_install "git-ignore alias"
+    git config --global alias.dry-commit 'commit --allow-empty -m "init project"'
+
+    log_install "git-ignore alias"
     git config --global alias.ignore '!gi() { curl -sL https://www.gitignore.io/api/$@ ;}; gi'
 
     log_install "git-accept-ours alias"
