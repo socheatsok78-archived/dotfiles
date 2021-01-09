@@ -1,0 +1,3 @@
+[submodule "dotfiles-composer"]
+	path = dotfiles-composer
+	url = git@github.com:socheatsok78/dotfiles-composer.git
