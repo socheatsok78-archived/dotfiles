@@ -15,7 +15,7 @@ But if you enjoy it please give it a :star:!
 > WIP
 
 ### See also
-Dotfiles are files and folders on Unix-like systems starting with . that control the configuration of applications and shells on your system. You can store and manage your dotfiles in a repository on GitHub. For advice and tutorials about what to include in your dotfiles repository, see [GitHub does dotfiles](https://dotfiles.github.io/).
+Dotfiles are files and folders on Unix-like systems starting with . that control the configuration of applications and shells on your system. You can store and manage your dotfiles in a repository on GitHub. For advice and tutorials about what to include in your dotfiles repository, see [Personalizing Codespaces for your account][personalizing-codespaces-for-your-account] or [GitHub does dotfiles][github-dotfiles].
 
 There are some great dotfiles around:
 - [terkelg/dotfiles](https://github.com/terkelg/dotfiles)
@@ -24,3 +24,6 @@ There are some great dotfiles around:
 
 ## :memo: License
 Licensed under the [MIT License](LICENSE).
+
+[personalizing-codespaces-for-your-account]: https://docs.github.com/en/free-pro-team@latest/github/developing-online-with-codespaces/personalizing-codespaces-for-your-account
+[github-dotfiles]: https://dotfiles.github.io/
