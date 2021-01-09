@@ -55,4 +55,12 @@ execute() {
 
 ####################################################################### traps
 ####################################################################### pre-flight
+
+# Dotfiles Submodules
+if [ -f ".gitmodules" ]; then
+    ohai "Fetching dotfiles submodules..."
+    git submodule init \
+    && git submodule update
+fi
+
 ####################################################################### setup
