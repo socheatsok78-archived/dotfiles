@@ -1,6 +1,6 @@
-[submodule "dotfiles-composer"]
-	path = dotfiles-composer
+[submodule "dotfiles.d/composer"]
+	path = dotfiles.d/composer
 	url = https://github.com/socheatsok78/dotfiles-composer.git
-[submodule "dotfiles-node"]
-	path = dotfiles-node
+[submodule "dotfiles.d/node"]
+	path = dotfiles.d/node
 	url = https://github.com/socheatsok78/dotfiles-node.git
