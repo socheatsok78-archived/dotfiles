@@ -2,10 +2,11 @@
 
 # Clear
 clear() {
-    local CLEAR_BIN="/usr/bin/clear"
+    /usr/bin/clear
 
-    $CLEAR_BIN
-    welcome;
+    if [ `command -v welcome` ]; then
+        welcome;
+    fi
 }
 
 # Reload ZSH Config
