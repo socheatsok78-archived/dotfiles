@@ -1,4 +1,4 @@
-export $DOTFILES_HOME="$HOME/dotfiles"
+export DOTFILES_HOME="$HOME/dotfiles"
 
 # Language
 export LANG=en_US.UTF-8
