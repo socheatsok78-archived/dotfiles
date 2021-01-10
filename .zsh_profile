@@ -11,9 +11,11 @@ export GUI_EDITOR='code'
 prompt_context() {}
 
 # Parsing all zsh .dotfiles
-test -e "$DOTFILES_HOME/profile.d/.zsh_antigen"     && source "$DOTFILES_HOME/profile.d/.zsh_antigen"
-test -e "$DOTFILES_HOME/profile.d/.zsh_env"         && source "$DOTFILES_HOME/profile.d/.zsh_env"
-test -e "$DOTFILES_HOME/profile.d/.zsh_completion"  && source "$DOTFILES_HOME/profile.d/.zsh_completion"
-test -e "$DOTFILES_HOME/profile.d/.zsh_functions"   && source "$DOTFILES_HOME/profile.d/.zsh_functions"
-test -e "$DOTFILES_HOME/profile.d/.zsh_aliases"     && source "$DOTFILES_HOME/profile.d/.zsh_aliases"
-test -e "$DOTFILES_HOME/profile.d/.zsh_plugins"     && source "$DOTFILES_HOME/profile.d/.zsh_plugins"
+if [ -d "$DOTFILES_HOME" ]; then
+    test -e "$DOTFILES_HOME/profile.d/.zsh_antigen"     && source "$DOTFILES_HOME/profile.d/.zsh_antigen"
+    test -e "$DOTFILES_HOME/profile.d/.zsh_env"         && source "$DOTFILES_HOME/profile.d/.zsh_env"
+    test -e "$DOTFILES_HOME/profile.d/.zsh_completion"  && source "$DOTFILES_HOME/profile.d/.zsh_completion"
+    test -e "$DOTFILES_HOME/profile.d/.zsh_functions"   && source "$DOTFILES_HOME/profile.d/.zsh_functions"
+    test -e "$DOTFILES_HOME/profile.d/.zsh_aliases"     && source "$DOTFILES_HOME/profile.d/.zsh_aliases"
+    test -e "$DOTFILES_HOME/profile.d/.zsh_plugins"     && source "$DOTFILES_HOME/profile.d/.zsh_plugins"
+fi
