@@ -22,6 +22,19 @@ There are some great dotfiles around:
 - [MikeMcQuaid/dotfiles](https://github.com/MikeMcQuaid/dotfiles)
 - [lifepillar/dotfiles](https://github.com/lifepillar/dotfiles)
 
+## Troubleshooting
+
+**compinit: insecure directories**:
+
+If you somehow have the following issues, do the following
+
+```sh
+# zsh compinit: insecure directories, run compaudit for list.
+# Ignore insecure directories and continue [y] or abort compinit [n]?
+
+compaudit | xargs chmod g-w
+```
+
 ## :memo: License
 Licensed under the [MIT License](LICENSE).
 
