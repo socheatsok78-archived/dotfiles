@@ -1,66 +1,16 @@
 #!/usr/bin/env bash
 
-####################################################################### utils
-# string formatters
-if [[ -t 1 ]]; then
-    tty_escape() { printf "\033[%sm" "$1"; }
-else
-    tty_escape() { :; }
-fi
+WORKING_DIR=`dirname $0`
 
-tty_mkbold() { tty_escape "1;$1"; }
-tty_underline="$(tty_escape "4;39")"
-tty_blue="$(tty_mkbold 34)"
-tty_red="$(tty_mkbold 31)"
-tty_yellow="$(tty_mkbold 33)"
-tty_bold="$(tty_mkbold 39)"
-tty_reset="$(tty_escape 0)"
+cd $WORKING_DIR
+source "libs/shared/homebrew.env"
 
-shell_join() {
-    local arg
-    printf "%s" "$1"
-    shift
-    for arg in "$@"; do
-        printf " "
-        printf "%s" "${arg// /\ }"
-    done
-}
-
-chomp() {
-    printf "%s" "${1/"$'\n'"/}"
-}
-
-ohai() {
-    printf "${tty_blue}==>${tty_bold} %s${tty_reset}\n" "$(shell_join "$@")"
-}
-
-warn() {
-    printf "${tty_yellow}Warning${tty_reset}: %s\n" "$(chomp "$1")"
-}
-
-error(){
-    printf "${tty_red}Error${tty_reset}: %s\n" "$(chomp "$1")" >>/dev/stderr
-}
-
-abort() {
-  printf "%s\n" "$1"
-  exit 1
-}
-
-execute() {
-  if ! "$@"; then
-    abort "$(printf "Failed during: %s" "$(shell_join "$@")")"
-  fi
-}
-
-####################################################################### traps
-####################################################################### pre-flight
-
-# Dotfiles Submodules
+#-------------------------------------------------- traps
+#-------------------------------------------------- pre-flight
+#----- Dotfiles Submodules
 if [ -f ".gitmodules" ]; then
     ohai "Fetching dotfiles submodules..."
     git submodule init \
     && git submodule update
 fi
-
-####################################################################### setup
+# -------------------------------------------------- setup
