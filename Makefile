@@ -21,4 +21,4 @@ dirty-clean:
 
 update: dirty-clean pre-flight
 	@echo "Updating dotfiles..."
-	git pull --rebase --stat origin master
+	@git pull --rebase --stat origin master
