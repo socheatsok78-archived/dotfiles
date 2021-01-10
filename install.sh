@@ -17,3 +17,6 @@ fi
 # -------------------------------------------------- setup
 #----- Install ZSH's profile
 execute "./libs/scripts/install-profile.sh"
+
+#----- Installation successful
+ohai "Installation successful!"
