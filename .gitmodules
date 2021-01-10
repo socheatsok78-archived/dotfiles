@@ -4,3 +4,6 @@
 [submodule "dotfiles.d/node"]
 	path = dotfiles.d/node
 	url = https://github.com/socheatsok78/dotfiles-node.git
+[submodule "dotfiles.d/iterm"]
+	path = dotfiles.d/iterm
+	url = https://github.com/socheatsok78/dotfiles-iterm.git
