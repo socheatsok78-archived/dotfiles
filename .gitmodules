@@ -10,3 +10,6 @@
 [submodule "dotfiles.d/macos"]
 	path = dotfiles.d/macos
 	url = https://github.com/socheatsok78/dotfiles-macos.git
+[submodule "dotfiles.d/bin"]
+	path = dotfiles.d/bin
+	url = https://github.com/socheatsok78/dotfiles-bin.git
