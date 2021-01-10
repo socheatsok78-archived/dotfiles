@@ -11,8 +11,8 @@ help:
 
 pre-flight: update-submodule executable
 
-install: update-submodule
-	@echo " ---> Installing dotfiles..."
+install:
+	@echo "Starting dotfiles installer..."
 	@./install.sh
 
 update: dirty-clean update-submodule
