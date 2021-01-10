@@ -43,7 +43,7 @@ fkill() {
 # Mac OS Dock Helper
 dock-add-spacer() {
     if [ `command -v defaults` ]; then
-        defaults write com.apple.dock persistent-apps -array-add '{"tile-type"="spacer-tile";}'
+        defaults write com.apple.dock persistent-others -array-add '{tile-data={}; tile-type="spacer-tile";}'
         killall Dock
     fi
 }
