@@ -3,6 +3,7 @@
 WORKING_DIR=`dirname $0`
 
 cd $WORKING_DIR
+source "libs/shared/banner.env"
 source "libs/shared/homebrew.env"
 
 #-------------------------------------------------- traps
