@@ -14,3 +14,5 @@ if [ -f ".gitmodules" ]; then
     && git submodule update
 fi
 # -------------------------------------------------- setup
+#----- Install ZSH's profile
+execute "./libs/scripts/install-profile.sh"
