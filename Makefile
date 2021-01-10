@@ -4,9 +4,10 @@ help:
 	@echo "dotfiles's Help"
 	@echo
 	@echo "Commands:"
+	@echo "- install: Install dotfiles to the system"
+	@echo "- update: Fast-forward dotfiles history"
 	@echo "- pre-flight: Do a pre-flight check"
 	@echo "- executable: Ensure scripts are executable"
-	@echo "- update: Fast-forward dotfiles history"
 
 pre-flight: update-submodule executable
 
