@@ -8,8 +8,15 @@ help:
 	@echo "- executable: Ensure scripts are executable"
 	@echo "- update: Fast-forward dotfiles history"
 
-
 pre-flight: update-submodule executable
+
+install: update-submodule
+	@echo " ---> Installing dotfiles..."
+	@./install.sh
+
+update: dirty-clean update-submodule
+	@echo " ---> Updating dotfiles..."
+	@git pull --rebase --stat origin main
 
 executable:
 	@echo " ---> Checking file mods..."
@@ -18,10 +25,6 @@ executable:
 dirty-clean:
 	@echo " ---> Cleaning up dirty files and directories..."
 	@git clean -df
-
-update: dirty-clean update-submodule
-	@echo " ---> Updating dotfiles..."
-	@git pull --rebase --stat origin main
 
 update-submodule:
 	@echo " ---> Updating submodules..."
