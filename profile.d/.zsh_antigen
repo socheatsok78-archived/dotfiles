@@ -20,3 +20,13 @@ antigen theme robbyrussell
 
 # Tell Antigen that you're done.
 antigen apply
+
+# Reload ZSH Config
+reload() {
+    if [ `command -v antigen` ]; then
+        antigen reset
+        return 0
+    fi
+
+    test -e ~/.zshrc && source ~/.zshrc
+}
