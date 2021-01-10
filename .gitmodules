@@ -7,3 +7,6 @@
 [submodule "dotfiles.d/iterm"]
 	path = dotfiles.d/iterm
 	url = https://github.com/socheatsok78/dotfiles-iterm.git
+[submodule "dotfiles.d/macos"]
+	path = dotfiles.d/macos
+	url = https://github.com/socheatsok78/dotfiles-macos.git
