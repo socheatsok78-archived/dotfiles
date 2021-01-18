@@ -13,3 +13,6 @@
 [submodule "dotfiles.d/bin"]
 	path = dotfiles.d/bin
 	url = https://github.com/socheatsok78/dotfiles-bin.git
+[submodule "github.d/socheatsok78"]
+	path = github.d/socheatsok78
+	url = https://github.com/socheatsok78/dotfiles-socheatsok78.git
