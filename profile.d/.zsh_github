@@ -1,0 +1,19 @@
+# .zsh_dotfiles
+#
+# automatically load submodules environment
+# by locating the `.source` in the `dotfiles.d` directory
+#
+# note: ensure that DOTFILES_HOME variable has properly set
+
+export DOTFILES_DATA="$DOTFILES_HOME/github.d"
+
+if [ -d "${DOTFILES_DATA}" ]; then
+    DOTFILES_MODULES=(`ls ${DOTFILES_DATA}`)
+
+    for modd in $DOTFILES_MODULES; do
+        MODULE_SOURCE="${DOTFILES_DATA}/${modd}.source"
+        if [ -f "${MODULE_SOURCE}" ]; then
+            source "${MODULE_SOURCE}"
+        fi
+    done
+fi
