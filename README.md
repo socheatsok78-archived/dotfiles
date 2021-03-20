@@ -35,6 +35,14 @@ If you somehow have the following issues, do the following
 compaudit | xargs chmod g-w
 ```
 
+### Development
+
+For development you can use the following command to pull all `dotfiles` and `dotfiles-*` repository listed in `.github/clone`.
+
+```
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/socheatsok78/dotfiles/main/.github/clone)"
+```
+
 ## :memo: License
 Licensed under the [MIT License](LICENSE).
 
