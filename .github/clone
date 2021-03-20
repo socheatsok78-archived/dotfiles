@@ -1,0 +1,11 @@
+#!/bin/bash
+
+REMOTE_REGISTRY=git@github.com:socheatsok78
+
+git clone "${REMOTE_REGISTRY}/dotfiles.git"
+git clone "${REMOTE_REGISTRY}/dotfiles-composer.git"
+git clone "${REMOTE_REGISTRY}/dotfiles-node.git"
+git clone "${REMOTE_REGISTRY}/dotfiles-iterm.git"
+git clone "${REMOTE_REGISTRY}/dotfiles-macos.git"
+git clone "${REMOTE_REGISTRY}/dotfiles-bin.git"
+git clone "${REMOTE_REGISTRY}/dotfiles-socheatsok78.git"
