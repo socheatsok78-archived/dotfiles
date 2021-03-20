@@ -18,4 +18,6 @@ if [ -d "$DOTFILES_HOME" ]; then
     test -e "$DOTFILES_HOME/profile.d/.zsh_functions"   && source "$DOTFILES_HOME/profile.d/.zsh_functions"
     test -e "$DOTFILES_HOME/profile.d/.zsh_aliases"     && source "$DOTFILES_HOME/profile.d/.zsh_aliases"
     test -e "$DOTFILES_HOME/profile.d/.zsh_plugins"     && source "$DOTFILES_HOME/profile.d/.zsh_plugins"
+    test -e "$DOTFILES_HOME/profile.d/.zsh_dotfiles"    && source "$DOTFILES_HOME/profile.d/.zsh_dotfiles"
+    test -e "$DOTFILES_HOME/profile.d/.zsh_github"      && source "$DOTFILES_HOME/profile.d/.zsh_github"
 fi
