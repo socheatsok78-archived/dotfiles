@@ -18,7 +18,6 @@ function dotfile-load-modules () {
 
             # If module ".source" exist, run source on it
             if [ -f "${MODULE_SOURCE}" ]; then
-                echo "Module loaded: ${MODULE_SOURCE}"
                 source "${MODULE_SOURCE}"
             fi
         done
